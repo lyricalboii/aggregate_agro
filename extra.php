@@ -3,41 +3,21 @@ require "db/db.php";
 // $loggedin = true;
 
 require_once 'db/config.php';
-if(!isset($_SESSION['user_token']) AND !isset($_SESSION['email'])){
-    header("location: login.php");
-    // die();
-  }else{
-if(isset($_SESSION['user_token'])){
+if(isset($_POST['first_name'])){
+  $first_name = $_POST['first_name'];
+  $last_name = $_POST['last_name'];
+  $mail = $_POST['mail'];
+  $phoneno = $_POST['phoneno'];
+  $password = $_POST['password'];
+  $usr_occupation = $_POST['usr_occupation'];
 
-$sql = "SELECT * FROM user_profile WHERE token = '{$_SESSION['user_token']}'";
-$result = mysqli_query($con,$sql);
+  $user_id = rand ( 1000 , 999999 ); 
+  $insert = "INSERT INTO `register` ( `uid`,`occupation`, `fullname`, `email`, `phoneno`, `password`,`otp`,`verified`, `date`) VALUES ( $user_id,'farmer', '$first_name', '$last_name', '$mail', '$phoneno', '$password',$user_id,0, current_timestamp())";
 
-if(mysqli_num_rows($result) > 0){
-    $userinfo = mysqli_fetch_assoc($result);
-    
- }
+  $result_insert = mysqli_query($con,$insert);
+  echo "inserted";
+
+}else{
+  echo "not set ";
 }
-else{
-    $sql = "SELECT * FROM user_profile WHERE email = '{$_SESSION['email']}' ";
-    $result = mysqli_query($con,$sql);
-
-    if(mysqli_num_rows($result) > 0){
-        $userinfo = mysqli_fetch_assoc($result);
-    }
-  }
-}
-
-
-echo $userinfo['uid']."<br>";
-echo $userinfo['picture']."<br>";
-echo $userinfo['token']."<br>";
-echo $userinfo['email']."<br>";
-echo $userinfo['fullname']."<br>";
-echo $userinfo['occupation']."<br>";
-echo $userinfo['phoneno']."<br>";
-echo $userinfo['address']."<br>";
-echo $userinfo['gender']."<br>";
-echo $userinfo['age']."<br>";
-echo $userinfo['workhour']."<br>";
-echo $userinfo['approxsalary']."<br>"; 
 ?>

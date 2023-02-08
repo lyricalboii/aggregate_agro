@@ -74,8 +74,9 @@ $v_code = rand ( 1000 , 9999 );
             $mail = $_POST['mail'];
             $phoneno = $_POST['phoneno'];
             $password = $_POST['password'];
-            $confirm_password = $_POST['confirm_password'];
-    
+            $usr_occupation = $_POST['occupation'];
+            // $confirm_password = $_POST['confirm_password'];
+            $fullname_r = $first_name.$last_name;
             $check = "SELECT * FROM `register` WHERE `email` = '$mail'";
             $result_check = mysqli_query($con,$check);
     
@@ -88,10 +89,10 @@ $v_code = rand ( 1000 , 9999 );
             }
             
             else{
-            if($password == $confirm_password){
+            // if($password == $confirm_password){
               echo "<script>console.log('password config')</script>";
                 $user_id = rand ( 1000 , 999999 ); 
-                $insert = "INSERT INTO `register` ( `uid`,`occupation`, `fullname`, `email`, `phoneno`, `password`,`otp`,`verified`, `date`) VALUES ( $user_id,'farmer', '$first_name', '$last_name', '$mail', '$phoneno', '$password',$v_code,0, current_timestamp())";
+                $insert = "INSERT INTO `register` ( `uid`,`occupation`, `fullname`, `email`, `phoneno`, `password`,`otp`,`verified`, `date`) VALUES ( $user_id,'$usr_occupation', '$fullname_r', '$mail', '$phoneno', '$password',$v_code,0, current_timestamp())";
 
                 $fullname = $first_name . ' ' .$last_name;
                 // echo $fullname;
@@ -162,13 +163,13 @@ $v_code = rand ( 1000 , 9999 );
             }
 
                 // header("location: myprofile.php");
-            }else{
+            // }else{
                 ?>
-<div class="alert alert-danger" role="alert">
+<!-- <div class="alert alert-danger" role="alert">
     Password Not match
-</div>
+</div> -->
 <?php
-            }
+            // }
             }
         }
         
@@ -216,6 +217,7 @@ $v_code = rand ( 1000 , 9999 );
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/login.css">
     <style>
     a.navbar-brand.logodefault {
         display: flex;
@@ -474,10 +476,20 @@ $v_code = rand ( 1000 , 9999 );
                                     <label>Password</label>
                                 </div>
 
-                                <div class="input-wrap">
+                                <!-- <div class="input-wrap">
                                     <input type="password" class="input-field" autocomplete="off"
                                         name="confirm_password" required />
                                     <label>Confirm Password</label>
+                                </div> -->
+
+                                <div class="input-wrap">
+                                <label>Occupation : </label>
+                                <select name="occupation" class="occupation">
+                                    <option value="farmer" seleted>Farmer</option>
+                                    <option value="worker">Worker</option>
+                                    <option value="seller">Seller</option>
+                                    <option value="yard">Yard</option>
+                                </select>
                                 </div>
 
 

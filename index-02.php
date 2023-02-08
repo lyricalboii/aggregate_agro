@@ -1,4 +1,3 @@
-
 <?php
 require "db/db.php";
 // $loggedin = true;
@@ -41,6 +40,7 @@ $_SESSION['sendfrom'] =$id;
 
 
 <!-- Mirrored from jobboard.websitelayout.net/index-02.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Sep 2022 12:46:46 GMT -->
+
 <head>
 
     <!-- metas -->
@@ -59,7 +59,7 @@ $_SESSION['sendfrom'] =$id;
     <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png" />
- 
+
 
     <!-- plugins -->
     <link rel="stylesheet" href="css/plugins.css" />
@@ -74,214 +74,216 @@ $_SESSION['sendfrom'] =$id;
     <link href="css/styles.css" rel="stylesheet" />
 
     <style>
-      
-        a.navbar-brand.logodefault {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-family: cursive;
-}
+    a.navbar-brand.logodefault {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-family: cursive;
+    }
 
-.profile_img {
-    width: 100%;
-    max-width: 50px;
-}
+    .profile_img {
+        width: 100%;
+        max-width: 50px;
+    }
 
-.job_offer{
-    overflow: scroll;
-    height: 100vh;
-    overflow-x: hidden;
-}
+    .job_offer {
+        overflow: scroll;
+        height: 100vh;
+        overflow-x: hidden;
+    }
 
-.farmer_con {
-    position: relative;
-    left: -30px;
-    top: 30px;
-}
+    .farmer_con {
+        position: relative;
+        left: -30px;
+        top: 30px;
+    }
 
-.farmer_con ul{
+    .farmer_con ul {
 
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    
-    font-size: 18px;
+        display: flex;
+        list-style: none;
+        gap: 20px;
 
-}
+        font-size: 18px;
 
-a.footer-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: white;
-    font-family: cursive;
-}
+    }
 
-.footer_info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    a.footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        font-family: cursive;
+    }
 
-i.fa.fa-search {
-    font-size: 20px;
-}
+    .footer_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-      main {
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-  background-color: #e9e9e9;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.containerr {
-  width: 26vmin;
-  height: 22vmin;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1em 0;
-  position: relative;
-  font-size: 16px;
-  border-radius: 0.5em;
-  background-color: #353636;  
-  margin-left: 9px;
-  background-image: url(img/bg/5.jpg);
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: overlay;
-}
-      @media (max-width: 850px) {
+    i.fa.fa-search {
+        font-size: 20px;
+    }
+
+    main {
+        width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+        background-color: #e9e9e9;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containerr {
+        width: 26vmin;
+        height: 22vmin;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1em 0;
+        position: relative;
+        font-size: 16px;
+        border-radius: 0.5em;
+        background-color: #353636;
+        margin-left: 9px;
+        background-image: url(img/bg/5.jpg);
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: overlay;
+    }
+
+    @media (max-width: 850px) {
         .box {
-          height: 420px;
-          max-width: 550px;
-          overflow: auto;
-          overflow-x: hidden;
+            height: 420px;
+            max-width: 550px;
+            overflow: auto;
+            overflow-x: hidden;
         }
-      }
-      .login-with-google-btn {    text-align: center;
-    display: inline-block;
-    width: 100%;
-    height: 43px;
-    background-color: #151111;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 0.8rem;
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-    transition: 0.3s;
-    transition: background-color .3s, box-shadow .3s;
-    padding: 12px 16px 12px 42px;
-    border: none;
-    border-radius: 3px;
-    box-shadow: 0 -1px 0 rgb(0 0 0 / 4%), 0 1px 1px rgb(0 0 0 / 25%);
-    color: #757575;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: 12px 11px;
-      }
-  &:hover {
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
-  }
-  
-  &:active {
-    background-color: #eeeeee;
-  }
-  
-  &:focus {
-    outline: none;
-    box-shadow: 
-      0 -1px 0 rgba(0, 0, 0, .04),
-      0 2px 4px rgba(0, 0, 0, .25),
-      0 0 0 3px #c8dafc;
-  }
+    }
 
-  a{
-    text-decoration: none;
-  }
-  
-  .inner-box {
-    background: white;
-  }
+    .login-with-google-btn {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        height: 43px;
+        background-color: #151111;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 0.8rem;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+        transition: 0.3s;
+        transition: background-color .3s, box-shadow .3s;
+        padding: 12px 16px 12px 42px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0 -1px 0 rgb(0 0 0 / 4%), 0 1px 1px rgb(0 0 0 / 25%);
+        color: #757575;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: 12px 11px;
+    }
 
-  .whimg1{
-    max-height: 480px;
-    height: 100%;
-    width: 100%;
-    max-width: 360px;
-  }
+    &:hover {
+        box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+    }
 
-  .whimg2 {
-    max-height: 330px;
-    height: 100%;
-    width: 100%;
-    max-width: 320px;
-}
+    &:active {
+        background-color: #eeeeee;
+    }
 
-.whimg3 {
-    max-height: 330px;
-    height: 100%;
-    width: 100%;
-    max-width: 320px;
-}
+    &:focus {
+        outline: none;
+        box-shadow:
+            0 -1px 0 rgba(0, 0, 0, .04),
+            0 2px 4px rgba(0, 0, 0, .25),
+            0 0 0 3px #c8dafc;
+    }
 
-.banner2 .job-search-form button {
-    height: 46px;
-    padding: 12px 20px;
-    border-radius: 5px;
-    width: 100%;
-    display: inline-block;
-    transition: .3s;
-    line-height: 17px;
-}
+    a {
+        text-decoration: none;
+    }
 
-.farmer_con {
-    position: relative;
-    left: -30px;
-    top: 30px;
-}
+    .inner-box {
+        background: white;
+    }
 
-.farmer_con ul{
+    .whimg1 {
+        max-height: 480px;
+        height: 100%;
+        width: 100%;
+        max-width: 360px;
+    }
 
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    
-    font-size: 18px;
+    .whimg2 {
+        max-height: 330px;
+        height: 100%;
+        width: 100%;
+        max-width: 320px;
+    }
 
-}
+    .whimg3 {
+        max-height: 330px;
+        height: 100%;
+        width: 100%;
+        max-width: 320px;
+    }
 
-.fprofile_btn{
-    width: 100%;
-    max-width: 160px;    
-    margin-top: 15px;
+    .banner2 .job-search-form button {
+        height: 46px;
+        padding: 12px 20px;
+        border-radius: 5px;
+        width: 100%;
+        display: inline-block;
+        transition: .3s;
+        line-height: 17px;
+    }
 
-}
+    .farmer_con {
+        position: relative;
+        left: -30px;
+        top: 30px;
+    }
 
-.fprofile_btn2{
-    width: 100%;
-    max-width: 160px;
-    margin-top: 30px;
-}
+    .farmer_con ul {
 
-.fprofile_btn3{
-    width: 100%;
-    max-width: 160px;
-    margin-top: 30px;
-}
+        display: flex;
+        list-style: none;
+        gap: 20px;
 
+        font-size: 18px;
 
-      </style>
+    }
+
+    .fprofile_btn {
+        width: 100%;
+        max-width: 160px;
+        margin-top: 15px;
+
+    }
+
+    .fprofile_btn2 {
+        width: 100%;
+        max-width: 160px;
+        margin-top: 30px;
+    }
+
+    .fprofile_btn3 {
+        width: 100%;
+        max-width: 160px;
+        margin-top: 30px;
+    }
+    </style>
 
 </head>
 
@@ -348,7 +350,8 @@ i.fa.fa-search {
                                                 <div class="quform-submit-inner">
                                                     <button class="butn" type="submit"><span>Find Jobs</span></button>
                                                 </div>
-                                                <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
+                                                <div class="quform-loading-wrap"><span class="quform-loading"></span>
+                                                </div>
                                             </div>
                                             <!-- End Submit button -->
                                         </div>
@@ -358,7 +361,9 @@ i.fa.fa-search {
                             <!--End Job Search Form -->
                             <!-- Popular Search -->
                             <div class="popular-searches">
-                                <span class="pe-3 font-weight-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nulla quam excepturi nostrum hic fuga, nesciunt quo illum natus dignissimos? </span>
+                                <span class="pe-3 font-weight-600">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Sed nulla quam excepturi nostrum hic fuga, nesciunt quo illum natus
+                                    dignissimos? </span>
                             </div>
                             <!-- End Popular Search -->
                         </div>
@@ -421,7 +426,8 @@ i.fa.fa-search {
                 </div>
                 <div class="job-categories owl-carousel owl-theme">
                     <div class="card card-style5">
-                        <div class="categories-img bg-img cover-background min-height-250" data-background="img/content/job-categorie-01.jpg"></div>
+                        <div class="categories-img bg-img cover-background min-height-250"
+                            data-background="img/content/job-categorie-01.jpg"></div>
                         <div class="card-body">
                             <span class="job-position">02 Jobs</span>
                             <div class="d-flex align-items-center">
@@ -438,7 +444,8 @@ i.fa.fa-search {
                         </div>
                     </div>
                     <div class="card card-style5">
-                        <div class="categories-img bg-img cover-background min-height-250" data-background="img/content/job-categorie-02.jpg"></div>
+                        <div class="categories-img bg-img cover-background min-height-250"
+                            data-background="img/content/job-categorie-02.jpg"></div>
                         <div class="card-body">
                             <span class="job-position">86 Jobs</span>
                             <div class="d-flex align-items-center">
@@ -448,14 +455,16 @@ i.fa.fa-search {
                                     </div>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <h4 class="h5 mb-1"><a href="job-listing.html" class="text-white">Maharashtra</a></h4>
+                                    <h4 class="h5 mb-1"><a href="job-listing.html" class="text-white">Maharashtra</a>
+                                    </h4>
                                     <p class="mb-0 display-30 text-white">Raybag, Amravati & More..</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card card-style5">
-                        <div class="categories-img bg-img cover-background min-height-250" data-background="img/content/job-categorie-03.jpg"></div>
+                        <div class="categories-img bg-img cover-background min-height-250"
+                            data-background="img/content/job-categorie-03.jpg"></div>
                         <div class="card-body">
                             <span class="job-position">20 Jobs</span>
                             <div class="d-flex align-items-center">
@@ -465,14 +474,16 @@ i.fa.fa-search {
                                     </div>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <h4 class="h5 mb-1"><a href="job-listing.html" class="text-white">Uttar Pradesh</a></h4>
+                                    <h4 class="h5 mb-1"><a href="job-listing.html" class="text-white">Uttar Pradesh</a>
+                                    </h4>
                                     <p class="mb-0 display-30 text-white">Bikapur, Ghazipur, Ghaziabad & More..</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card card-style5">
-                        <div class="categories-img bg-img cover-background min-height-250" data-background="img/content/job-categorie-04.jpg"></div>
+                        <div class="categories-img bg-img cover-background min-height-250"
+                            data-background="img/content/job-categorie-04.jpg"></div>
                         <div class="card-body">
                             <span class="job-position">12 Jobs</span>
                             <div class="d-flex align-items-center">
@@ -489,7 +500,8 @@ i.fa.fa-search {
                         </div>
                     </div>
                     <div class="card card-style5">
-                        <div class="categories-img bg-img cover-background min-height-250" data-background="img/content/job-categorie-05.jpg"></div>
+                        <div class="categories-img bg-img cover-background min-height-250"
+                            data-background="img/content/job-categorie-05.jpg"></div>
                         <div class="card-body">
                             <span class="job-position">55 Jobs</span>
                             <div class="d-flex align-items-center">
@@ -499,14 +511,16 @@ i.fa.fa-search {
                                     </div>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <h4 class="h5 mb-1"><a href="job-listing.html" class="text-white">Uttarakhand</a></h4>
+                                    <h4 class="h5 mb-1"><a href="job-listing.html" class="text-white">Uttarakhand</a>
+                                    </h4>
                                     <p class="mb-0 display-30 text-white">Kharsali, Mukhba & More..</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card card-style5">
-                        <div class="categories-img bg-img cover-background min-height-250" data-background="img/content/job-categorie-06.jpg"></div>
+                        <div class="categories-img bg-img cover-background min-height-250"
+                            data-background="img/content/job-categorie-06.jpg"></div>
                         <div class="card-body">
                             <span class="job-position">43 Jobs</span>
                             <div class="d-flex align-items-center">
@@ -516,7 +530,8 @@ i.fa.fa-search {
                                     </div>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <h4 class="h5 mb-1"><a href="job-listing.html" class="text-white">Madhya Pradesh</a></h4>
+                                    <h4 class="h5 mb-1"><a href="job-listing.html" class="text-white">Madhya Pradesh</a>
+                                    </h4>
                                     <p class="mb-0 display-30 text-white">Deori, Nandi & More..</p>
                                 </div>
                             </div>
@@ -531,7 +546,8 @@ i.fa.fa-search {
                             <div class="flex-shrink-0 mb-3 mb-sm-0">
                                 <img src="img/icons/icon-09.png" alt="...">
                             </div>
-                            <div class="flex-grow-1 border-sm-start border-color-extra-light-gray ps-sm-3 ps-xl-4 ms-sm-3 ms-xl-4">
+                            <div
+                                class="flex-grow-1 border-sm-start border-color-extra-light-gray ps-sm-3 ps-xl-4 ms-sm-3 ms-xl-4">
                                 <h3 class="countup h1 text-secondary mb-1">400</h3>
                                 <span class="text-muted">Jobs Posted</span>
                             </div>
@@ -542,7 +558,8 @@ i.fa.fa-search {
                             <div class="flex-shrink-0 mb-3 mb-sm-0">
                                 <img src="img/icons/icon-10.png" alt="...">
                             </div>
-                            <div class="flex-grow-1 border-sm-start border-color-extra-light-gray ps-sm-3 ps-xl-4 ms-sm-3 ms-xl-4">
+                            <div
+                                class="flex-grow-1 border-sm-start border-color-extra-light-gray ps-sm-3 ps-xl-4 ms-sm-3 ms-xl-4">
                                 <h3 class="countup h1 text-secondary mb-1">125</h3>
                                 <span class="font-weight-500 text-muted">Jobs Filled</span>
                             </div>
@@ -553,7 +570,8 @@ i.fa.fa-search {
                             <div class="flex-shrink-0 mb-3 mb-sm-0">
                                 <img src="img/icons/icon-11.png" alt="...">
                             </div>
-                            <div class="flex-grow-1 border-sm-start border-color-extra-light-gray ps-sm-3 ps-xl-4 ms-sm-3 ms-xl-4">
+                            <div
+                                class="flex-grow-1 border-sm-start border-color-extra-light-gray ps-sm-3 ps-xl-4 ms-sm-3 ms-xl-4">
                                 <h3 class="countup h1 text-secondary mb-1">220</h3>
                                 <span class="font-weight-500 text-muted">City</span>
                             </div>
@@ -564,7 +582,8 @@ i.fa.fa-search {
                             <div class="flex-shrink-0 mb-3 mb-sm-0">
                                 <img src="img/icons/icon-21.png" alt="...">
                             </div>
-                            <div class="flex-grow-1 border-sm-start border-color-extra-light-gray ps-sm-3 ps-xl-4 ms-sm-3 ms-xl-4">
+                            <div
+                                class="flex-grow-1 border-sm-start border-color-extra-light-gray ps-sm-3 ps-xl-4 ms-sm-3 ms-xl-4">
                                 <h3 class="countup h1 text-secondary mb-1">150</h3>
                                 <span class="font-weight-500 text-muted">Workers</span>
                             </div>
@@ -611,19 +630,23 @@ i.fa.fa-search {
                                         </span>
                                     </div>
                                 </div>
-                                <h5 class="text-primary mb-3"><?php echo $row['approxsalary']; ?> <span class="text-muted display-31">/ Month</span> </h5>
+                                <h5 class="text-primary mb-3"><?php echo $row['approxsalary']; ?> <span
+                                        class="text-muted display-31">/ Month</span> </h5>
                                 <div class="mb-4">
-                                    <span class="display-30 me-2"><i class="fas fa-map-marker-alt pe-2"></i><?php echo $row['address']; ?></span>
-                                    <span class="display-30"><i class="far fa-clock pe-2"></i><?php echo $row['workhour']; ?></span>
+                                    <span class="display-30 me-2"><i
+                                            class="fas fa-map-marker-alt pe-2"></i><?php echo $row['address']; ?></span>
+                                    <span class="display-30"><i
+                                            class="far fa-clock pe-2"></i><?php echo $row['workhour']; ?></span>
                                 </div>
-                                <a href="job-details.php?id=<?php echo $row['uid'] ?>" class="butn butn-md radius">Apply Now</a>
+                                <a href="job-details.php?id=<?php echo $row['uid'] ?>" class="butn butn-md radius">Apply
+                                    Now</a>
 
-                                
+
                                 <div class="farmer_con">
                                     <ul>
-                                        <li  > <a href="#"> <i class="fa-solid fa-envelope"></i></a></li>
-                                        <li > <a href="#"> <i class="fa-solid fa-phone"></i></a></li>
-                                        <li >  <i class="fa-solid fa-circle"></i></li>
+                                        <li> <a href="#"> <i class="fa-solid fa-envelope"></i></a></li>
+                                        <li> <a href="#"> <i class="fa-solid fa-phone"></i></a></li>
+                                        <li> <i class="fa-solid fa-circle"></i></li>
                                     </ul>
                                 </div>
                             </div>
@@ -786,7 +809,8 @@ i.fa.fa-search {
                         </div>
                     </div> -->
                 </div>
-                <a href="candidate-details.html" class="butn w-100 radius fprofile_btn2">More Jobs <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="candidate-details.html" class="butn w-100 radius fprofile_btn2">More Jobs <i
+                        class="fa-solid fa-arrow-right"></i></a>
             </div>
         </section>
 
@@ -881,9 +905,10 @@ i.fa.fa-search {
                             <?php
                             if(!isset($row1['picture'])){
                                 ?>
-                                <img src="img/avatar/user.png" style="width: 96px;height:96px;" class="border-radius-50 mb-3" alt="...">
+                            <img src="img/avatar/user.png" style="width: 96px;height:96px;"
+                                class="border-radius-50 mb-3" alt="...">
 
-                                <?php
+                            <?php
                             }else{
                             ?>
                             <img src="<?php echo $row1['picture']; ?>" class="border-radius-50 mb-3" alt="...">
@@ -893,7 +918,9 @@ i.fa.fa-search {
                           }
                             ?>
                             <div class="candidate-info">
-                                <h4 class="h5"><a href="candidate-details.php?id=<?php echo $row1['uid']; ?>"><?php echo $row1['fullname']; ?></a></h4>
+                                <h4 class="h5"><a
+                                        href="candidate-details.php?id=<?php echo $row1['uid']; ?>"><?php echo $row1['fullname']; ?></a>
+                                </h4>
                                 <span class="display-30 text-muted d-block mb-2 font-weight-500"></span>
                                 <div class="display-30 text-warning">
                                     <i class="fas fa-star"></i>
@@ -904,8 +931,9 @@ i.fa.fa-search {
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mb-3">
-                                <span><i class="ti-location-pin text-secondary me-2 display-31 display-sm-30"></i><strong>
-                                    <?php 
+                                <span><i
+                                        class="ti-location-pin text-secondary me-2 display-31 display-sm-30"></i><strong>
+                                        <?php 
                                     if($row1['address'] == NULL){
                                         echo substr("Address Notset",0,5).'..';
                                     }else{
@@ -913,7 +941,8 @@ i.fa.fa-search {
                                     }
 
                                     ?></strong></span>
-                                <span><i class="far fa-money-bill-alt text-secondary me-2 display-31 display-sm-30"></i><strong><?php
+                                <span><i
+                                        class="far fa-money-bill-alt text-secondary me-2 display-31 display-sm-30"></i><strong><?php
                                 if($row1['approxsalary'] == NULL){
                                     echo substr("Sallary Notset",0,5).'..';
                                 }else{
@@ -921,7 +950,7 @@ i.fa.fa-search {
                                 }
                                  ?> / Month</strong></span>
                                 <span><i class="ti-briefcase text-secondary me-2 display-31 display-sm-30"></i><strong>
-                                    <?php 
+                                        <?php 
                                     if($row1['workhour'] == NULL){
                                         echo substr("WorkHour Notset",0,5).'..';
                                     }else{
@@ -930,7 +959,8 @@ i.fa.fa-search {
                                     
                                     ?></strong></span>
                             </div>
-                            <a href="candidate-details.php?id=<?php echo $row1['uid']; ?>" class="butn w-100 radius">View Profile</a>
+                            <a href="candidate-details.php?id=<?php echo $row1['uid']; ?>"
+                                class="butn w-100 radius">View Profile</a>
                         </div>
                     </div>
                     <?php
@@ -986,13 +1016,14 @@ i.fa.fa-search {
                             }
                     ?>
                 </div>
-                <a href="candidate-details.html" class="butn w-100 radius fprofile_btn2" style="max-width: 175px;">More Reviews <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="candidate-details.html" class="butn w-100 radius fprofile_btn2" style="max-width: 175px;">More
+                    Reviews <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </section>
 
         <!-- BLOG
         ================================================== -->
-      
+
 
         <!-- NEWSLETTER
         ================================================== -->
@@ -1004,14 +1035,17 @@ i.fa.fa-search {
                         <p class="text-white mb-0 opacity9">Sign up for our newsletter and study us on social media.</p>
                     </div>
                     <div class="col-lg-5">
-                        <form class="quform newsletter-form" action="https://jobboard.websitelayout.net/quform/newsletter-two.php" method="post" enctype="multipart/form-data" onclick="">
+                        <form class="quform newsletter-form"
+                            action="https://jobboard.websitelayout.net/quform/newsletter-two.php" method="post"
+                            enctype="multipart/form-data" onclick="">
                             <div class="quform-elements">
                                 <div class="row">
                                     <!-- Begin Text input element -->
                                     <div class="col-md-12">
                                         <div class="quform-element">
                                             <div class="quform-input">
-                                                <input class="form-control border-radius-5" id="email_address" type="text" name="email_address" placeholder="Subscribe with us" />
+                                                <input class="form-control border-radius-5" id="email_address"
+                                                    type="text" name="email_address" placeholder="Subscribe with us" />
                                             </div>
                                         </div>
                                     </div>
@@ -1020,7 +1054,8 @@ i.fa.fa-search {
                                     <!-- Begin Submit button -->
                                     <div class="col-md-12">
                                         <div class="quform-submit-inner">
-                                            <button class="btn btn-white text-primary m-0" type="submit"><i class="fas fa-paper-plane"></i></button>
+                                            <button class="btn btn-white text-primary m-0" type="submit"><i
+                                                    class="fas fa-paper-plane"></i></button>
                                         </div>
                                         <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
                                     </div>
@@ -1040,11 +1075,15 @@ i.fa.fa-search {
                 <div class="row mt-n2-6">
                     <div class="col-sm-6 col-lg-5 mt-2-6">
                         <a href="#!" class="footer-logo"><img src="img/logos/logo.png" class="mb-1-6" alt="..."></a>
-                        <p>Advertise your jobs to hundreds of thousands of monthly customers and seek 15.8 million CV in our database.</p>
+                        <p>Advertise your jobs to hundreds of thousands of monthly customers and seek 15.8 million CV in
+                            our database.</p>
                         <ul class="contact-list black">
-                            <li class="d-flex"><span class="fa fa-home pe-3"></span><a href="#!">66 Guild Street 512B, Great North Town.</a></li>
-                            <li class="d-flex"><span class="fa fa-phone-alt pe-3"></span><a href="#!">(+44) 123 456 789</a></li>
-                            <li class="d-flex"><span class="fa fa-envelope pe-3"></span><a href="#!">info@example.com</a></li>
+                            <li class="d-flex"><span class="fa fa-home pe-3"></span><a href="#!">66 Guild Street 512B,
+                                    Great North Town.</a></li>
+                            <li class="d-flex"><span class="fa fa-phone-alt pe-3"></span><a href="#!">(+44) 123 456
+                                    789</a></li>
+                            <li class="d-flex"><span class="fa fa-envelope pe-3"></span><a
+                                    href="#!">info@example.com</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-lg-2 offset-lg-1 mt-2-6">
@@ -1087,8 +1126,10 @@ i.fa.fa-search {
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <p class="d-inline-block mb-0">&copy; <span class="current-year"></span> Job Board Powered by
-                                <a href="https://www.chitrakootweb.com/" target="_blank" class="text-primary secondary-hover">Chitrakoot Web</a>
+                            <p class="d-inline-block mb-0">&copy; <span class="current-year"></span> Job Board Powered
+                                by
+                                <a href="https://www.chitrakootweb.com/" target="_blank"
+                                    class="text-primary secondary-hover">Chitrakoot Web</a>
                             </p>
                         </div>
                     </div>
@@ -1100,7 +1141,7 @@ i.fa.fa-search {
 
     <!-- BUY TEMPLATE
     ================================================== -->
-    
+
     <!-- start scroll to top -->
     <a href="#!" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
     <!-- end scroll to top -->
@@ -1137,4 +1178,5 @@ i.fa.fa-search {
 
 
 <!-- Mirrored from jobboard.websitelayout.net/index-02.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Sep 2022 12:47:19 GMT -->
+
 </html>

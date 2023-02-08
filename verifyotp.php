@@ -36,11 +36,18 @@ if(isset($_POST['usrotp'])){
     $num = mysqli_num_rows($result_query);
     if($num > 0){
         $row = mysqli_fetch_assoc($result_query);
+        $occupation = $row['occupation'];
         if($usrotp == $row['otp']){
             $query = "UPDATE `register` SET `verified` = '1' WHERE `register`.`email` = '$email'";
             $result = mysqli_query($con,$query);
             if($result){
-                // header("location: index-02.php");
+              if($occupation == "worker"){
+                header("location: index-02.php");
+              }else if($occupation == "farmer"){
+                header("location: index-04.php");
+              }else{
+                header("location: commingsoon.php");
+              }
                 echo "updated";
             }
 
