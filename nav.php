@@ -26,8 +26,8 @@
 
                                     <div class="navbar-header navbar-header-custom">
                                         <!-- start logo -->
-                                        <div class="custom_logo1">
-                                        <a href="index-02.php" class="navbar-brand logodefault"><img id="logo" src="img/logos/logo.png" alt="logo">Aggregate Agro</a>
+                                        <div class="custom_logo1" style="font-family: cursive;">
+                                        <a href="index-02.php" class="navbar-brand logodefault"><img id="logo" src="img/logos/logo.png" alt="logo" >Aggregate Agro</a>
                                     </div>
                                         <!-- end logo -->
                                     </div>

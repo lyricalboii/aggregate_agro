@@ -58,6 +58,21 @@ $_SESSION['sendfrom'] =$id;
     .rounded-circle {
         border-radius: 50% !important;
     }
+
+    .section_1{
+        background-repeat: no-repeat;
+    background-position: inherit;
+    background-size: cover;
+    }
+
+
+
+.avatar_req{
+    width: 15%;
+    max-width: 100%;
+    position: relative;
+    left: 160px;
+}
     </style>
 
     <!-- favicon -->
@@ -95,23 +110,23 @@ $_SESSION['sendfrom'] =$id;
 
         <!-- BANNER
         ================================================== -->
-        <section class="top-position1 bg-img pt-18 pt-md-20 pt-lg-24 pb-6 pb-md-10" data-overlay-dark="7"
-            data-background="img/banner/banner-01.jpg">
+        <section class="top-position1 bg-img pt-18 pt-md-20 pt-lg-24 pb-6 pb-md-10 section_1 " data-overlay-dark="2"
+            data-background="img/bg/index4bg_01.jpeg">
             <div class="container pb-sm-6 pb-md-8 pb-lg-12">
                 <div class="row align-items-center justify-content-center text-center pt-sm-7">
                     <div class="col-xl-9 col-xxl-7 mb-1-9 mb-lg-0">
                         <div>
                             <h1 class="text-white display-sm-14 display-lg-10">
-                                Find The Best Job
+                                Find The Best Worker
                             </h1>
                         </div>
                         <div class="banner-4-form mb-2-9">
                             <form action="#!">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Job title, Keyword"
+                                    <input type="text" class="form-control" placeholder="worker, Keyword"
                                         aria-label="Job title, Keyword" aria-describedby="button-addon2" />
                                     <button class="butn" type="button" id="button-addon2">
-                                        Find Job
+                                        Find
                                     </button>
                                 </div>
                             </form>
@@ -132,20 +147,23 @@ $_SESSION['sendfrom'] =$id;
         <section>
             <div class="container">
                 <div class="section-heading4">
-                    <span>Recent Jobs</span>
-                    <h2>Latest Job Postings</h2>
+                    <span>Worker</span>
+                    <h2>Latest job request</h2>
                 </div>
                 <div class="recent-jobs owl-carousel owl-theme">
                     <div class="card card-style10">
                         <div class="card-body">
-                            <span class="popular-jobs-status">Full Time</span>
-                            <a class="favourite" href="#"><i class="far fa-heart"></i></a>
-                            <div class="popular-jobs-box">
-                                <img class="mb-4 border-radius-10" src="img/content/job-01.jpg" alt="..." />
+                            <!-- <span class="popular-jobs-status">Full Time</span> -->
+                       
+                            <div class="popular-jobs-box avatar_req">
+                                <img class="mb-4 border-radius-10 " src="img/avatar/user.png" alt="..." />
+                                </div>
+
+                                <div>
                                 <h4 class="h5">
                                     <a href="job-details.html">Security Ltd.</a>
                                 </h4>
-                                <p class="text-muted font-weight-500">Assistant Manager</p>
+                               
                             </div>
                             <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
                                     class="fas fa-map-marker-alt pe-2 text-secondary"></i>Canada</span>
@@ -153,9 +171,126 @@ $_SESSION['sendfrom'] =$id;
                                     class="far fa-clock pe-2 text-secondary"></i>$25K</span>
                             <span><i class="ti-briefcase pe-2 text-secondary"></i>5 year</span>
                         </div>
-                        <a href="job-details.html" class="butn butn-apply">Apply Now</a>
+                        <a href="job-details.html" class="butn butn-apply">View Profile</a>
                     </div>
+
                     <div class="card card-style10">
+                        <div class="card-body">
+                            <!-- <span class="popular-jobs-status">Full Time</span> -->
+                       
+                            <div class="popular-jobs-box avatar_req">
+                                <img class="mb-4 border-radius-10 " src="img/avatar/user.png" alt="..." />
+                                </div>
+
+                                <div>
+                                <h4 class="h5">
+                                    <a href="job-details.html">Security Ltd.</a>
+                                </h4>
+                               
+                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>Canada</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>$25K</span>
+                            <span><i class="ti-briefcase pe-2 text-secondary"></i>5 year</span>
+                        </div>
+                        <a href="job-details.html" class="butn butn-apply">View Profile</a>
+                    </div>
+
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <!-- <span class="popular-jobs-status">Full Time</span> -->
+                       
+                            <div class="popular-jobs-box avatar_req">
+                                <img class="mb-4 border-radius-10 " src="img/avatar/user.png" alt="..." />
+                                </div>
+
+                                <div>
+                                <h4 class="h5">
+                                    <a href="job-details.html">Security Ltd.</a>
+                                </h4>
+                               
+                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>Canada</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>$25K</span>
+                            <span><i class="ti-briefcase pe-2 text-secondary"></i>5 year</span>
+                        </div>
+                        <a href="job-details.html" class="butn butn-apply">View Profile</a>
+                    </div>
+
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <!-- <span class="popular-jobs-status">Full Time</span> -->
+                       
+                            <div class="popular-jobs-box avatar_req">
+                                <img class="mb-4 border-radius-10 " src="img/avatar/user.png" alt="..." />
+                                </div>
+
+                                <div>
+                                <h4 class="h5">
+                                    <a href="job-details.html">Security Ltd.</a>
+                                </h4>
+                               
+                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>Canada</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>$25K</span>
+                            <span><i class="ti-briefcase pe-2 text-secondary"></i>5 year</span>
+                        </div>
+                        <a href="job-details.html" class="butn butn-apply">View Profile</a>
+                    </div>
+
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <!-- <span class="popular-jobs-status">Full Time</span> -->
+                       
+                            <div class="popular-jobs-box avatar_req">
+                                <img class="mb-4 border-radius-10 " src="img/avatar/user.png" alt="..." />
+                                </div>
+
+                                <div>
+                                <h4 class="h5">
+                                    <a href="job-details.html">Security Ltd.</a>
+                                </h4>
+                               
+                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>Canada</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>$25K</span>
+                            <span><i class="ti-briefcase pe-2 text-secondary"></i>5 year</span>
+                        </div>
+                        <a href="job-details.html" class="butn butn-apply">View Profile</a>
+                    </div>
+
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <!-- <span class="popular-jobs-status">Full Time</span> -->
+                       
+                            <div class="popular-jobs-box avatar_req">
+                                <img class="mb-4 border-radius-10 " src="img/avatar/user.png" alt="..." />
+                                </div>
+
+                                <div>
+                                <h4 class="h5">
+                                    <a href="job-details.html">Security Ltd.</a>
+                                </h4>
+                               
+                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>Canada</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>$25K</span>
+                            <span><i class="ti-briefcase pe-2 text-secondary"></i>5 year</span>
+                        </div>
+                        <a href="job-details.html" class="butn butn-apply">View Profile</a>
+                    </div>
+
+                    
+                    <!-- <div class="card card-style10">
                         <div class="card-body">
                             <span class="popular-jobs-status">Full Time</span>
                             <a class="favourite" href="#"><i class="far fa-heart"></i></a>
@@ -242,376 +377,15 @@ $_SESSION['sendfrom'] =$id;
                                     <a href="job-details.html">Oryx International</a>
                                 </h4>
                                 <p class="text-muted font-weight-500">.Net Developer</p>
-                            </div>
-                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                            </div> -->
+                            <!-- <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
                                     class="fas fa-map-marker-alt pe-2 text-secondary"></i>Japan</span>
                             <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
                                     class="far fa-clock pe-2 text-secondary"></i>$90K</span>
                             <span><i class="ti-briefcase pe-2 text-secondary"></i>1 year</span>
-                        </div>
-                        <a href="job-details.html" class="butn butn-apply">Apply Now</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- JOB CATEGORIES
-        ================================================== -->
-        <section class="bg-primary-light">
-            <div class="container">
-                <div class="section-heading4">
-                    <span>Categories</span>
-                    <h2>Jobs By Category</h2>
-                </div>
-                <div class="row mt-n1-9">
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div class="card card-style11">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <div class="categories-icon">
-                                            <img src="img/icons/icon-38.png" alt="..." />
-                                        </div>
-                                        <div class="hover-icon">
-                                            <img src="img/icons/icon-39.png" alt="..." />
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h4 class="h5">
-                                            <a href="job-listing.html">Accounting</a>
-                                        </h4>
-                                        <p class="mb-0 text-secondary font-weight-600">
-                                            2 Open Position
-                                        </p>
-                                        <span>01</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div class="card card-style11">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <div class="categories-icon">
-                                            <img src="img/icons/icon-40.png" alt="..." />
-                                        </div>
-                                        <div class="hover-icon">
-                                            <img src="img/icons/icon-41.png" alt="..." />
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h4 class="h5">
-                                            <a href="job-listing.html">Marketing</a>
-                                        </h4>
-                                        <p class="mb-0 text-secondary font-weight-600">
-                                            86 Open Position
-                                        </p>
-                                        <span>02</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div class="card card-style11">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <div class="categories-icon">
-                                            <img src="img/icons/icon-42.png" alt="..." />
-                                        </div>
-                                        <div class="hover-icon">
-                                            <img src="img/icons/icon-43.png" alt="..." />
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h4 class="h5">
-                                            <a href="job-listing.html">Customer Service</a>
-                                        </h4>
-                                        <p class="mb-0 text-secondary font-weight-600">
-                                            20 Open Position
-                                        </p>
-                                        <span>03</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div class="card card-style11">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <div class="categories-icon">
-                                            <img src="img/icons/icon-44.png" alt="..." />
-                                        </div>
-                                        <div class="hover-icon">
-                                            <img src="img/icons/icon-45.png" alt="..." />
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h4 class="h5">
-                                            <a href="job-listing.html">Development</a>
-                                        </h4>
-                                        <p class="mb-0 text-secondary font-weight-600">
-                                            12 Open Position
-                                        </p>
-                                        <span>04</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div class="card card-style11">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <div class="categories-icon">
-                                            <img src="img/icons/icon-46.png" alt="..." />
-                                        </div>
-                                        <div class="hover-icon">
-                                            <img src="img/icons/icon-47.png" alt="..." />
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h4 class="h5">
-                                            <a href="job-listing.html">Construction</a>
-                                        </h4>
-                                        <p class="mb-0 text-secondary font-weight-600">
-                                            55 Open Position
-                                        </p>
-                                        <span>05</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div class="card card-style11">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <div class="categories-icon">
-                                            <img src="img/icons/icon-48.png" alt="..." />
-                                        </div>
-                                        <div class="hover-icon">
-                                            <img src="img/icons/icon-49.png" alt="..." />
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h4 class="h5"><a href="job-listing.html">Design</a></h4>
-                                        <p class="mb-0 text-secondary font-weight-600">
-                                            43 Open Position
-                                        </p>
-                                        <span>06</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div class="card card-style11">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <div class="categories-icon">
-                                            <img src="img/icons/icon-50.png" alt="..." />
-                                        </div>
-                                        <div class="hover-icon">
-                                            <img src="img/icons/icon-51.png" alt="..." />
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h4 class="h5">
-                                            <a href="job-listing.html">Charity & Voluntary</a>
-                                        </h4>
-                                        <p class="mb-0 text-secondary font-weight-600">
-                                            12 Open Position
-                                        </p>
-                                        <span>07</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div class="card card-style11">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <div class="categories-icon">
-                                            <img src="img/icons/icon-34.png" alt="..." />
-                                        </div>
-                                        <div class="hover-icon">
-                                            <img src="img/icons/icon-35.png" alt="..." />
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h4 class="h5">
-                                            <a href="job-listing.html">Health and Care</a>
-                                        </h4>
-                                        <p class="mb-0 text-secondary font-weight-600">
-                                            25 Open Position
-                                        </p>
-                                        <span>08</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div class="card card-style11">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <div class="categories-icon">
-                                            <img src="img/icons/icon-36.png" alt="..." />
-                                        </div>
-                                        <div class="hover-icon">
-                                            <img src="img/icons/icon-37.png" alt="..." />
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h4 class="h5">
-                                            <a href="job-listing.html">Automobiles</a>
-                                        </h4>
-                                        <p class="mb-0 text-secondary font-weight-600">
-                                            85 Open Position
-                                        </p>
-                                        <span>09</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- JOB LOCATION
-        ================================================== -->
-        <section>
-            <div class="container">
-                <div class="section-heading4">
-                    <span>Around the world</span>
-                    <h2>Featured Job Locations</h2>
-                </div>
-                <div class="row mt-n1-9">
-                    <div class="col-sm-6 col-lg-3 mt-1-9">
-                        <div class="card card-style12">
-                            <img src="img/content/location-01.jpg" alt="..." class="border-radius-10" />
-                            <div class="location-title">USA</div>
-                            <div class="card-body">
-                                <h4 class="mb-3">
-                                    <a href="job-details.html" class="text-white">Boston</a>
-                                </h4>
-                                <div class="job-position">
-                                    <a href="job-details.html">15 Jobs</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 mt-1-9">
-                        <div class="card card-style12">
-                            <img src="img/content/location-02.jpg" alt="..." class="border-radius-10" />
-                            <div class="location-title">Australia</div>
-                            <div class="card-body">
-                                <h4 class="mb-3">
-                                    <a href="job-details.html" class="text-white">Vienna</a>
-                                </h4>
-                                <div class="job-position">
-                                    <a href="job-details.html">08 Jobs</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 mt-1-9">
-                        <div class="card card-style12">
-                            <img src="img/content/location-03.jpg" alt="..." class="border-radius-10" />
-                            <div class="location-title">Russia</div>
-                            <div class="card-body">
-                                <h4 class="mb-3">
-                                    <a href="job-details.html" class="text-white">Nizhny</a>
-                                </h4>
-                                <div class="job-position">
-                                    <a href="job-details.html">18 Jobs</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 mt-1-9">
-                        <div class="card card-style12">
-                            <img src="img/content/location-04.jpg" alt="..." class="border-radius-10" />
-                            <div class="location-title">Germany</div>
-                            <div class="card-body">
-                                <h4 class="mb-3">
-                                    <a href="job-details.html" class="text-white">Dresden</a>
-                                </h4>
-                                <div class="job-position">
-                                    <a href="job-details.html">10 Jobs</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 mt-1-9">
-                        <div class="card card-style12">
-                            <img src="img/content/location-05.jpg" alt="..." class="border-radius-10" />
-                            <div class="location-title">Thailand</div>
-                            <div class="card-body">
-                                <h4 class="mb-3">
-                                    <a href="job-details.html" class="text-white">Bangkok</a>
-                                </h4>
-                                <div class="job-position">
-                                    <a href="job-details.html">05 Jobs</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 mt-1-9">
-                        <div class="card card-style12">
-                            <img src="img/content/location-06.jpg" alt="..." class="border-radius-10" />
-                            <div class="location-title">United Kingdom</div>
-                            <div class="card-body">
-                                <h4 class="mb-3">
-                                    <a href="job-details.html" class="text-white">London</a>
-                                </h4>
-                                <div class="job-position">
-                                    <a href="job-details.html">12 Jobs</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 mt-1-9">
-                        <div class="card card-style12">
-                            <img src="img/content/location-07.jpg" alt="..." class="border-radius-10" />
-                            <div class="location-title">Canada</div>
-                            <div class="card-body">
-                                <h4 class="mb-3">
-                                    <a href="job-details.html" class="text-white">Toronto</a>
-                                </h4>
-                                <div class="job-position">
-                                    <a href="job-details.html">06 Jobs</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 mt-1-9">
-                        <div class="card card-style12">
-                            <img src="img/content/location-08.jpg" alt="..." class="border-radius-10" />
-                            <div class="location-title">Mumbai</div>
-                            <div class="card-body">
-                                <h4 class="mb-3">
-                                    <a href="job-details.html" class="text-white">India</a>
-                                </h4>
-                                <div class="job-position">
-                                    <a href="job-details.html">15 Jobs</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        </div> -->
+                        <!-- <a href="job-details.html" class="butn butn-apply">Apply Now</a>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -621,8 +395,8 @@ $_SESSION['sendfrom'] =$id;
         <section class="bg-primary-light company-style-02">
             <div class="container">
                 <div class="section-heading4">
-                    <span>Let’s Find Out</span>
-                    <h2>Top Rated Companies</h2>
+                    <span>seller</span>
+                    <h2>Purchase Product & Equipment</h2>
                 </div>
                 <div class="row mt-n1-9">
                     <div class="col-md-6 mt-1-9">
@@ -633,7 +407,7 @@ $_SESSION['sendfrom'] =$id;
                                     <div class="d-xl-flex align-items-center">
                                         <div class="flex-shrink-0">
                                             <div class="text-center text-xl-start mb-4 mb-xl-0">
-                                                <img src="img/content/company-01.jpg" alt="..." />
+                                                <img src="img/bg/feuipment_01.jpg" alt="..." />
                                             </div>
                                         </div>
                                         <div
