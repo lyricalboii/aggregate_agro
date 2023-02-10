@@ -73,6 +73,29 @@ $_SESSION['sendfrom'] =$id;
     position: relative;
     left: 160px;
 }
+
+.prod_1{
+    max-width: 100%;
+}
+
+.prod1_img{
+    width: 60%;
+}
+
+.prod_main{
+    height: 10%;
+}
+
+.crop_1{
+    width: 55%;
+    max-width: 100%;
+    position: relative;
+    left: 90px;
+}
+
+.crop1_img{
+ 
+}
     </style>
 
     <!-- favicon -->
@@ -399,258 +422,219 @@ $_SESSION['sendfrom'] =$id;
                     <h2>Purchase Product & Equipment</h2>
                 </div>
                 <div class="row mt-n1-9">
-                    <div class="col-md-6 mt-1-9">
+                    <div class="col-md-6 mt-1-9 prod_main">
                         <div
                             class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
                             <div class="row align-items-center">
                                 <div class="col-xl-9 mb-4 mb-xl-0">
                                     <div class="d-xl-flex align-items-center">
-                                        <div class="flex-shrink-0">
-                                            <div class="text-center text-xl-start mb-4 mb-xl-0">
-                                                <img src="img/bg/feuipment_01.jpg" alt="..." />
+                                        <div class="">
+                                            <div class="text-center text-xl-start mb-4 mb-xl-0 prod_1">
+                                                <img class="prod1_img" src="img/bg/feuipment_01.jpg" alt="..." />
                                             </div>
                                         </div>
+
                                         <div
                                             class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
                                             <h4 class="h5 mb-3">
-                                                <a href="employer-details.html">Conzio construction</a>
+                                                <a href="employer-details.html">fertilizer</a>
                                             </h4>
-                                            <div class="display-31 text-warning mb-3">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <span
-                                                    class="bg-primary px-2 py-1 ms-2 display-31 text-white font-weight-600 border-radius-10">4.0</span>
-                                            </div>
                                             <ul class="list-style2 mb-0">
+                                                <!-- <li>
+                                                    <i class="ti-briefcase pe-2 text-secondary"></i>
+                                                </li> -->
                                                 <li>
-                                                    <i class="ti-briefcase pe-2 text-secondary"></i>Marketing
-                                                </li>
-                                                <li>
-                                                    <i class="ti-location-pin pe-2 text-secondary"></i>Boston, USA
+                                                    <i class="ti-location-pin pe-2 text-secondary"></i>junagadh
                                                 </li>
                                             </ul>
+                                            <div class="col-xl-3 text-xl-end" style="margin-top:10px;">
+                                    <a href="employer-details.html" class="butn butn-md radius">Explore</a>
+                                </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 text-xl-end">
-                                    <a href="employer-details.html" class="butn butn-md radius">08 Jobs</a>
-                                </div>
+                            
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-1-9">
-                        <div
-                            class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
-                            <div class="featured-lable">Featured</div>
-                            <div class="row align-items-center">
-                                <div class="col-xl-9 mb-4 mb-xl-0">
-                                    <div class="d-block d-xl-flex align-items-center">
-                                        <div class="flex-shrink-0">
-                                            <div class="text-center text-xl-start mb-4 mb-xl-0">
-                                                <img src="img/content/company-02.jpg" alt="..." />
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
-                                            <h4 class="h5 mb-3">
-                                                <a href="employer-details.html">Midway Overline</a>
-                                            </h4>
-                                            <div class="display-31 text-warning mb-3">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <span
-                                                    class="bg-primary px-2 py-1 ms-2 display-31 text-white font-weight-600 border-radius-10">5.0</span>
-                                            </div>
-                                            <ul class="list-style2 mb-0">
-                                                <li>
-                                                    <i class="ti-briefcase pe-2 text-secondary"></i>PHP
-                                                    Developer
-                                                </li>
-                                                <li>
-                                                    <i class="ti-location-pin pe-2 text-secondary"></i>Toronto, Canada
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 text-xl-end">
-                                    <a href="employer-details.html" class="butn butn-md radius">05 Jobs</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-1-9">
-                        <div
-                            class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
-                            <div class="featured-lable">Featured</div>
-                            <div class="row align-items-center">
-                                <div class="col-xl-9 mb-4 mb-xl-0">
-                                    <div class="d-block d-xl-flex align-items-center">
-                                        <div class="flex-shrink-0">
-                                            <div class="text-center text-xl-start mb-4 mb-xl-0">
-                                                <img src="img/content/company-03.jpg" alt="..." />
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
-                                            <h4 class="h5 mb-3">
-                                                <a href="employer-details.html">Ktone Software</a>
-                                            </h4>
-                                            <div class="display-31 text-warning mb-3">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <span
-                                                    class="bg-primary px-2 py-1 ms-2 display-31 text-white font-weight-600 border-radius-10">5.0</span>
-                                            </div>
-                                            <ul class="list-style2 mb-0">
-                                                <li>
-                                                    <i class="ti-briefcase pe-2 text-secondary"></i>Accounting
-                                                </li>
-                                                <li>
-                                                    <i class="ti-location-pin pe-2 text-secondary"></i>London, UK
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 text-xl-end">
-                                    <a href="employer-details.html" class="butn butn-md radius">02 Jobs</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-1-9">
+                    <div class="col-md-6 mt-1-9 prod_main">
                         <div
                             class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
                             <div class="row align-items-center">
                                 <div class="col-xl-9 mb-4 mb-xl-0">
-                                    <div class="d-block d-xl-flex align-items-center">
-                                        <div class="flex-shrink-0">
-                                            <div class="text-center text-xl-start mb-4 mb-xl-0">
-                                                <img src="img/content/company-04.jpg" alt="..." />
+                                    <div class="d-xl-flex align-items-center">
+                                        <div class="">
+                                            <div class="text-center text-xl-start mb-4 mb-xl-0 prod_1">
+                                                <img class="prod1_img" src="img/bg/feuipment_01.jpg" alt="..." />
                                             </div>
                                         </div>
+
                                         <div
                                             class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
                                             <h4 class="h5 mb-3">
-                                                <a href="employer-details.html">Alpha Kem</a>
+                                                <a href="employer-details.html">fertilizer</a>
                                             </h4>
-                                            <div class="display-31 text-warning mb-3">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <span
-                                                    class="bg-primary px-2 py-1 ms-2 display-31 text-white font-weight-600 border-radius-10">5.0</span>
-                                            </div>
                                             <ul class="list-style2 mb-0">
+                                                <!-- <li>
+                                                    <i class="ti-briefcase pe-2 text-secondary"></i>
+                                                </li> -->
                                                 <li>
-                                                    <i class="ti-briefcase pe-2 text-secondary"></i>Content Writer
-                                                </li>
-                                                <li>
-                                                    <i class="ti-location-pin pe-2 text-secondary"></i>Nizhny, Russia
+                                                    <i class="ti-location-pin pe-2 text-secondary"></i>junagadh
                                                 </li>
                                             </ul>
+                                            <div class="col-xl-3 text-xl-end" style="margin-top:10px;">
+                                    <a href="employer-details.html" class="butn butn-md radius">Explore</a>
+                                </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 text-xl-end">
-                                    <a href="employer-details.html" class="butn butn-md radius">03 Jobs</a>
-                                </div>
+                            
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-1-9">
-                        <div
-                            class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
-                            <div class="featured-lable">Featured</div>
-                            <div class="row align-items-center">
-                                <div class="col-xl-9 mb-4 mb-xl-0">
-                                    <div class="d-block d-xl-flex align-items-center">
-                                        <div class="flex-shrink-0">
-                                            <div class="text-center text-xl-start mb-4 mb-xl-0">
-                                                <img src="img/content/company-05.jpg" alt="..." />
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
-                                            <h4 class="h5 mb-3">
-                                                <a href="employer-details.html">Waft Technologies</a>
-                                            </h4>
-                                            <div class="display-31 text-warning mb-3">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <span
-                                                    class="bg-primary px-2 py-1 ms-2 display-31 text-white font-weight-600 border-radius-10">4.0</span>
-                                            </div>
-                                            <ul class="list-style2 mb-0">
-                                                <li>
-                                                    <i class="ti-briefcase pe-2 text-secondary"></i>Software Engineer
-                                                </li>
-                                                <li>
-                                                    <i class="ti-location-pin pe-2 text-secondary"></i>Utrecht,
-                                                    Netherlands
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 text-xl-end">
-                                    <a href="employer-details.html" class="butn butn-md radius">02 Jobs</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-1-9">
+                    <div class="col-md-6 mt-1-9 prod_main">
                         <div
                             class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
                             <div class="row align-items-center">
                                 <div class="col-xl-9 mb-4 mb-xl-0">
-                                    <div class="d-block d-xl-flex align-items-center">
-                                        <div class="flex-shrink-0">
-                                            <div class="text-center text-xl-start mb-4 mb-xl-0">
-                                                <img src="img/content/company-06.jpg" alt="..." />
+                                    <div class="d-xl-flex align-items-center">
+                                        <div class="">
+                                            <div class="text-center text-xl-start mb-4 mb-xl-0 prod_1">
+                                                <img class="prod1_img" src="img/bg/feuipment_01.jpg" alt="..." />
                                             </div>
                                         </div>
+
                                         <div
                                             class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
                                             <h4 class="h5 mb-3">
-                                                <a href="employer-details.html">Sai Web Infotech</a>
+                                                <a href="employer-details.html">fertilizer</a>
                                             </h4>
-                                            <div class="display-31 text-warning mb-3">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <span
-                                                    class="bg-primary px-2 py-1 ms-2 display-31 text-white font-weight-600 border-radius-10">5.0</span>
-                                            </div>
                                             <ul class="list-style2 mb-0">
+                                                <!-- <li>
+                                                    <i class="ti-briefcase pe-2 text-secondary"></i>
+                                                </li> -->
                                                 <li>
-                                                    <i class="ti-briefcase pe-2 text-secondary"></i>Full-Stack Developer
-                                                </li>
-                                                <li>
-                                                    <i class="ti-location-pin pe-2 text-secondary"></i>Vienna, Australia
+                                                    <i class="ti-location-pin pe-2 text-secondary"></i>junagadh
                                                 </li>
                                             </ul>
+                                            <div class="col-xl-3 text-xl-end" style="margin-top:10px;">
+                                    <a href="employer-details.html" class="butn butn-md radius">Explore</a>
+                                </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 text-xl-end">
-                                    <a href="employer-details.html" class="butn butn-md radius">03 Jobs</a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-1-9 prod_main">
+                        <div
+                            class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
+                            <div class="row align-items-center">
+                                <div class="col-xl-9 mb-4 mb-xl-0">
+                                    <div class="d-xl-flex align-items-center">
+                                        <div class="">
+                                            <div class="text-center text-xl-start mb-4 mb-xl-0 prod_1">
+                                                <img class="prod1_img" src="img/bg/feuipment_01.jpg" alt="..." />
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
+                                            <h4 class="h5 mb-3">
+                                                <a href="employer-details.html">fertilizer</a>
+                                            </h4>
+                                            <ul class="list-style2 mb-0">
+                                                <!-- <li>
+                                                    <i class="ti-briefcase pe-2 text-secondary"></i>
+                                                </li> -->
+                                                <li>
+                                                    <i class="ti-location-pin pe-2 text-secondary"></i>junagadh
+                                                </li>
+                                            </ul>
+                                            <div class="col-xl-3 text-xl-end" style="margin-top:10px;">
+                                    <a href="employer-details.html" class="butn butn-md radius">Explore</a>
                                 </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-1-9 prod_main">
+                        <div
+                            class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
+                            <div class="row align-items-center">
+                                <div class="col-xl-9 mb-4 mb-xl-0">
+                                    <div class="d-xl-flex align-items-center">
+                                        <div class="">
+                                            <div class="text-center text-xl-start mb-4 mb-xl-0 prod_1">
+                                                <img class="prod1_img" src="img/bg/feuipment_01.jpg" alt="..." />
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
+                                            <h4 class="h5 mb-3">
+                                                <a href="employer-details.html">fertilizer</a>
+                                            </h4>
+                                            <ul class="list-style2 mb-0">
+                                                <!-- <li>
+                                                    <i class="ti-briefcase pe-2 text-secondary"></i>
+                                                </li> -->
+                                                <li>
+                                                    <i class="ti-location-pin pe-2 text-secondary"></i>junagadh
+                                                </li>
+                                            </ul>
+                                            <div class="col-xl-3 text-xl-end" style="margin-top:10px;">
+                                    <a href="employer-details.html" class="butn butn-md radius">Explore</a>
+                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-1-9 prod_main">
+                        <div
+                            class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
+                            <div class="row align-items-center">
+                                <div class="col-xl-9 mb-4 mb-xl-0">
+                                    <div class="d-xl-flex align-items-center">
+                                        <div class="">
+                                            <div class="text-center text-xl-start mb-4 mb-xl-0 prod_1">
+                                                <img class="prod1_img" src="img/bg/feuipment_01.jpg" alt="..." />
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
+                                            <h4 class="h5 mb-3">
+                                                <a href="employer-details.html">fertilizer</a>
+                                            </h4>
+                                            <ul class="list-style2 mb-0">
+                                                <!-- <li>
+                                                    <i class="ti-briefcase pe-2 text-secondary"></i>
+                                                </li> -->
+                                                <li>
+                                                    <i class="ti-location-pin pe-2 text-secondary"></i>junagadh
+                                                </li>
+                                            </ul>
+                                            <div class="col-xl-3 text-xl-end" style="margin-top:10px;">
+                                    <a href="employer-details.html" class="butn butn-md radius">Explore</a>
+                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            
                             </div>
                         </div>
                     </div>
@@ -663,317 +647,301 @@ $_SESSION['sendfrom'] =$id;
         <section>
             <div class="container">
                 <div class="section-heading4">
-                    <span>Testimonials</span>
-                    <h2>Our Satisfied Client</h2>
+                    <span>Yard</span>
+                    <h2>Sell Your Crop</h2>
                 </div>
-                <div class="testimonial4-carousel owl-carousel owl-theme">
-                    <div class="testimonial-wrapper">
-                        <div class="d-sm-flex align-items-center">
-                            <div class="flex-shrink-0 mb-1-6 mb-sm-0">
-                                <div class="testimonial-img">
-                                    <img src="img/avatar/avatar-07.jpg" alt="..." class="border-radius-10" />
-                                    <i class="fas fa-quote-left"></i>
+                <div class="recent-jobs owl-carousel owl-theme">
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <!-- <span class="popular-jobs-status">Full Time</span> -->
+                       
+                            <div class="popular-jobs-box crop_1">
+                                <img class="mb-4 border-radius-10 crop1_img " src="img/bg/wheat.jpg" alt="..." />
                                 </div>
+
+                                <div>
+                                <h4 class="h5">
+                                    <a href="job-details.html">Wheat</a>
+                                </h4>
+                               
                             </div>
-                            <div class="flex-grow-1 ms-sm-1-9 text-center text-sm-start">
-                                <p class="display-29 display-xl-28">
-                                    Wow what great service, I love it! You guys rock! I am
-                                    completely blown away. Thank you.
-                                </p>
-                                <h6 class="h5 mb-1">Eva Kleist</h6>
-                                <span class="text-secondary">Senior Manager</span>
-                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>Amreli</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>RS.2000</span>
+                   
                         </div>
+                        <a href="job-details.html" class="butn butn-apply">View</a>
                     </div>
-                    <div class="testimonial-wrapper">
-                        <div class="d-sm-flex align-items-center">
-                            <div class="flex-shrink-0 mb-1-6 mb-sm-0">
-                                <div class="testimonial-img">
-                                    <img src="img/avatar/avatar-08.jpg" alt="..." class="border-radius-10" />
-                                    <i class="fas fa-quote-left"></i>
+
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <!-- <span class="popular-jobs-status">Full Time</span> -->
+                       
+                            <div class="popular-jobs-box crop_1">
+                                <img class="mb-4 border-radius-10 crop1_img " src="img/bg/wheat.jpg" alt="..." />
                                 </div>
+
+                                <div>
+                                <h4 class="h5">
+                                    <a href="job-details.html">Wheat</a>
+                                </h4>
+                               
                             </div>
-                            <div class="flex-grow-1 ms-sm-1-9 text-center text-sm-start">
-                                <p class="display-29 display-xl-28">
-                                    I would gladly pay over 600 dollars for jobboard. Jobboard
-                                    is worth much more than I paid.
-                                </p>
-                                <h6 class="h5 mb-1">Marko Konig</h6>
-                                <span class="text-secondary">Web Designer</span>
-                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>Amreli</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>RS.2000</span>
+                   
                         </div>
+                        <a href="job-details.html" class="butn butn-apply">View</a>
                     </div>
-                    <div class="testimonial-wrapper">
-                        <div class="d-sm-flex align-items-center">
-                            <div class="flex-shrink-0 mb-1-6 mb-sm-0">
-                                <div class="testimonial-img">
-                                    <img src="img/avatar/avatar-09.jpg" alt="..." class="border-radius-10" />
-                                    <i class="fas fa-quote-left"></i>
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <!-- <span class="popular-jobs-status">Full Time</span> -->
+                       
+                            <div class="popular-jobs-box crop_1">
+                                <img class="mb-4 border-radius-10 crop1_img " src="img/bg/wheat.jpg" alt="..." />
                                 </div>
+
+                                <div>
+                                <h4 class="h5">
+                                    <a href="job-details.html">Wheat</a>
+                                </h4>
+                               
                             </div>
-                            <div class="flex-grow-1 ms-sm-1-9 text-center text-sm-start">
-                                <p class="display-29 display-xl-28">
-                                    I have gotten at least 50 times the value from jobboard. I
-                                    didn't even need training. Thanks.
-                                </p>
-                                <h6 class="h5 mb-1">Rosa Olsen</h6>
-                                <span class="text-secondary">Apps Developer</span>
-                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>Amreli</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>RS.2000</span>
+                   
                         </div>
+                        <a href="job-details.html" class="butn butn-apply">View</a>
                     </div>
-                    <div class="testimonial-wrapper">
-                        <div class="d-sm-flex align-items-center">
-                            <div class="flex-shrink-0 mb-1-6 mb-sm-0">
-                                <div class="testimonial-img">
-                                    <img src="img/avatar/avatar-10.jpg" alt="..." class="border-radius-10" />
-                                    <i class="fas fa-quote-left"></i>
+
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <!-- <span class="popular-jobs-status">Full Time</span> -->
+                       
+                            <div class="popular-jobs-box crop_1">
+                                <img class="mb-4 border-radius-10 crop1_img " src="img/bg/wheat.jpg" alt="..." />
                                 </div>
+
+                                <div>
+                                <h4 class="h5">
+                                    <a href="job-details.html">Wheat</a>
+                                </h4>
+                               
                             </div>
-                            <div class="flex-grow-1 ms-sm-1-9 text-center text-sm-start">
-                                <p class="display-29 display-xl-28">
-                                    Since I invested in jobboard I made over more dollars
-                                    profits. jobboard is the coolest thing!
-                                </p>
-                                <h6 class="h5 mb-1">Eshan Marshall</h6>
-                                <span class="text-secondary">Business Manager</span>
-                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>Amreli</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>RS.2000</span>
+                   
                         </div>
+                        <a href="job-details.html" class="butn butn-apply">View</a>
                     </div>
+
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <!-- <span class="popular-jobs-status">Full Time</span> -->
+                       
+                            <div class="popular-jobs-box crop_1">
+                                <img class="mb-4 border-radius-10 crop1_img " src="img/bg/wheat.jpg" alt="..." />
+                                </div>
+
+                                <div>
+                                <h4 class="h5">
+                                    <a href="job-details.html">Wheat</a>
+                                </h4>
+                               
+                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>Amreli</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>RS.2000</span>
+                   
+                        </div>
+                        <a href="job-details.html" class="butn butn-apply">View</a>
+                    </div>
+
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <!-- <span class="popular-jobs-status">Full Time</span> -->
+                       
+                            <div class="popular-jobs-box crop_1">
+                                <img class="mb-4 border-radius-10 crop1_img " src="img/bg/wheat.jpg" alt="..." />
+                                </div>
+
+                                <div>
+                                <h4 class="h5">
+                                    <a href="job-details.html">Wheat</a>
+                                </h4>
+                               
+                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>Amreli</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>RS.2000</span>
+                   
+                        </div>
+                        <a href="job-details.html" class="butn butn-apply">View</a>
+                    </div>
+
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <!-- <span class="popular-jobs-status">Full Time</span> -->
+                       
+                            <div class="popular-jobs-box crop_1">
+                                <img class="mb-4 border-radius-10 crop1_img " src="img/bg/wheat.jpg" alt="..." />
+                                </div>
+
+                                <div>
+                                <h4 class="h5">
+                                    <a href="job-details.html">Wheat</a>
+                                </h4>
+                               
+                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>Amreli</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>RS.2000</span>
+                   
+                        </div>
+                        <a href="job-details.html" class="butn butn-apply">View</a>
+                    </div>
+
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <!-- <span class="popular-jobs-status">Full Time</span> -->
+                       
+                            <div class="popular-jobs-box crop_1">
+                                <img class="mb-4 border-radius-10 crop1_img " src="img/bg/wheat.jpg" alt="..." />
+                                </div>
+
+                                <div>
+                                <h4 class="h5">
+                                    <a href="job-details.html">Wheat</a>
+                                </h4>
+                               
+                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>Amreli</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>RS.2000</span>
+                   
+                        </div>
+                        <a href="job-details.html" class="butn butn-apply">View</a>
+                    </div>
+
+                    
+                    <!-- <div class="card card-style10">
+                        <div class="card-body">
+                            <span class="popular-jobs-status">Full Time</span>
+                            <a class="favourite" href="#"><i class="far fa-heart"></i></a>
+                            <div class="popular-jobs-box">
+                                <img class="mb-4 border-radius-10" src="img/content/job-02.jpg" alt="..." />
+                                <h4 class="h5">
+                                    <a href="job-details.html">Creative Tech Ltd.</a>
+                                </h4>
+                                <p class="text-muted font-weight-500">Sr. Project Manager</p>
+                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>California</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>$15K</span>
+                            <span><i class="ti-briefcase pe-2 text-secondary"></i>3 year</span>
+                        </div>
+                        <a href="job-details.html" class="butn butn-apply">Apply Now</a>
+                    </div>
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <span class="popular-jobs-status">Part Time</span>
+                            <a class="favourite" href="#"><i class="far fa-heart"></i></a>
+                            <div class="popular-jobs-box">
+                                <img class="mb-4 border-radius-10" src="img/content/job-03.jpg" alt="..." />
+                                <h4 class="h5">
+                                    <a href="job-details.html">Bedford Ltd.</a>
+                                </h4>
+                                <p class="text-muted font-weight-500">UI / UX Designer</p>
+                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>New
+                                York</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>$18K</span>
+                            <span><i class="ti-briefcase pe-2 text-secondary"></i>8 year</span>
+                        </div>
+                        <a href="job-details.html" class="butn butn-apply">Apply Now</a>
+                    </div>
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <span class="popular-jobs-status">Full Time</span>
+                            <a class="favourite" href="#"><i class="far fa-heart"></i></a>
+                            <div class="popular-jobs-box">
+                                <img class="mb-4 border-radius-10" src="img/content/job-04.jpg" alt="..." />
+                                <h4 class="h5">
+                                    <a href="job-details.html">Saspol Limited</a>
+                                </h4>
+                                <p class="text-muted font-weight-500">Software Engineer</p>
+                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>London</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>$20K</span>
+                            <span><i class="ti-briefcase pe-2 text-secondary"></i>2 year</span>
+                        </div>
+                        <a href="job-details.html" class="butn butn-apply">Apply Now</a>
+                    </div>
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <span class="popular-jobs-status">Part Time</span>
+                            <a class="favourite" href="#"><i class="far fa-heart"></i></a>
+                            <div class="popular-jobs-box">
+                                <img class="mb-4 border-radius-10" src="img/content/job-05.jpg" alt="..." />
+                                <h4 class="h5">
+                                    <a href="job-details.html">Depan insider ltd</a>
+                                </h4>
+                                <p class="text-muted font-weight-500">Content Writing</p>
+                            </div>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>UK</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>$40K</span>
+                            <span><i class="ti-briefcase pe-2 text-secondary"></i>7 year</span>
+                        </div>
+                        <a href="job-details.html" class="butn butn-apply">Apply Now</a>
+                    </div>
+                    <div class="card card-style10">
+                        <div class="card-body">
+                            <span class="popular-jobs-status">Full Time</span>
+                            <a class="favourite" href="#"><i class="far fa-heart"></i></a>
+                            <div class="popular-jobs-box">
+                                <img class="mb-4 border-radius-10" src="img/content/job-06.jpg" alt="..." />
+                                <h4 class="h5">
+                                    <a href="job-details.html">Oryx International</a>
+                                </h4>
+                                <p class="text-muted font-weight-500">.Net Developer</p>
+                            </div> -->
+                            <!-- <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="fas fa-map-marker-alt pe-2 text-secondary"></i>Japan</span>
+                            <span class="border-end border-color-extra-light-gray pe-2 me-2"><i
+                                    class="far fa-clock pe-2 text-secondary"></i>$90K</span>
+                            <span><i class="ti-briefcase pe-2 text-secondary"></i>1 year</span>
+                        </div> -->
+                        <!-- <a href="job-details.html" class="butn butn-apply">Apply Now</a>
+                    </div> -->
                 </div>
             </div>
         </section>
 
         <!-- EXTRA
         ================================================== -->
-        <section class="bg-primary-light">
-            <div class="container">
-                <div class="row align-items-center mt-n1-9">
-                    <div class="col-xl-6 order-2 order-lg-1 mt-1-9">
-                        <h2 class="h3 text-capitalize font-weight-700 mb-4">
-                            Find Talent From The Featured Ones For Your Dream Job.
-                        </h2>
-                        <p class="mb-4">
-                            Just due to the fact you don’t recognise what profession you
-                            need doesn’t imply you don’t recognise what you’re right at. A
-                            first rate manner to attention to your capabilities is to make a
-                            listing of your strengths. If that doesn’t come evidently to
-                            you, ask a chum or relied on co-employee their opinion.
-                        </p>
-                        <a href="job-grid.html" class="butn">Find Jobs Now</a>
-                    </div>
-                    <div class="col-xl-6 mb-2-5 mb-lg-0 order-1 order-lg-2 mt-1-9">
-                        <div class="ps-xl-8">
-                            <div class="row justify-content-center mt-n1-9">
-                                <div class="col-sm-6 mt-1-9 text-center text-sm-start">
-                                    <div
-                                        class="d-sm-flex align-items-center border border-color-extra-light-gray border-radius-10 bg-white p-3 w-100 h-100">
-                                        <div class="flex-shrink-0 mb-3 mb-sm-0">
-                                            <img src="img/icons/icon-22.png" alt="..." />
-                                        </div>
-                                        <div
-                                            class="flex-grow-1 border-sm-start border-color-extra-light-gray ps-sm-3 ps-xl-4 ms-sm-3 ms-xl-4">
-                                            <h3 class="countup h1 text-secondary mb-1">1327</h3>
-                                            <span class="font-weight-500 text-muted">Job Posted</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 mt-1-9 text-center text-sm-start">
-                                    <div
-                                        class="d-sm-flex align-items-center border border-color-extra-light-gray border-radius-10 bg-white p-3 w-100 h-100">
-                                        <div class="flex-shrink-0 mb-3 mb-sm-0">
-                                            <img src="img/icons/icon-23.png" alt="..." />
-                                        </div>
-                                        <div
-                                            class="flex-grow-1 border-sm-start border-color-extra-light-gray ps-sm-3 ps-xl-4 ms-sm-3 ms-xl-4">
-                                            <h3 class="countup h1 text-secondary mb-1">150</h3>
-                                            <span class="font-weight-500 text-muted">Jobs Filled</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 mt-1-9 text-center text-sm-start">
-                                    <div
-                                        class="d-sm-flex align-items-center border border-color-extra-light-gray border-radius-10 bg-white p-3 w-100 h-100">
-                                        <div class="flex-shrink-0 mb-3 mb-sm-0">
-                                            <img src="img/icons/icon-24.png" alt="..." />
-                                        </div>
-                                        <div
-                                            class="flex-grow-1 border-sm-start border-color-extra-light-gray ps-sm-3 ps-xl-4 ms-sm-3 ms-xl-4">
-                                            <h3 class="countup h1 text-secondary mb-1">220</h3>
-                                            <span class="font-weight-500 text-muted">Companie</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 mt-1-9 text-center text-sm-start">
-                                    <div
-                                        class="d-sm-flex align-items-center border border-color-extra-light-gray border-radius-10 bg-white p-3 w-100 h-100">
-                                        <div class="flex-shrink-0 mb-3 mb-sm-0">
-                                            <img src="img/icons/icon-25.png" alt="..." />
-                                        </div>
-                                        <div
-                                            class="flex-grow-1 border-sm-start border-color-extra-light-gray ps-sm-3 ps-xl-4 ms-sm-3 ms-xl-4">
-                                            <h3 class="countup h1 text-secondary mb-1">2250</h3>
-                                            <span class="font-weight-500 text-muted">Candidate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+     
 
         <!-- BLOG
         ================================================== -->
-        <section>
-            <div class="container">
-                <div class="section-heading4">
-                    <span>Our Blogs</span>
-                    <h2>Recent News Article</h2>
-                </div>
-                <div class="row mt-n1-9">
-                    <div class="col-xl-6 mt-1-9">
-                        <div
-                            class="d-block d-md-flex border border-color-extra-light-gray bg-white border-radius-10 p-3 h-100">
-                            <div class="col-md-5 bg-img cover-background border-radius-10 min-height-250"
-                                data-background="img/blog/blog-01.jpg"></div>
-                            <div class="col-md-7">
-                                <div class="px-md-1-9 pt-4 pb-2 py-md-4">
-                                    <ul class="list-style2 mb-3">
-                                        <li><a href="#!">18 Apr, 2022</a></li>
-                                        <li><a href="#!">Comment</a>(<span>12</span>)</li>
-                                    </ul>
-                                    <h4 class="h5 mb-3">
-                                        <a href="blog-details.html">How To Make A Perfect Cv That Attracts The
-                                            Attention...</a>
-                                    </h4>
-                                    <p class="mb-3">
-                                        A job ravenously at the same time as Far plenty that one
-                                        rank beheld after outside.
-                                    </p>
-                                    <div
-                                        class="border-top border-color-extra-light-gray d-flex justify-content-between align-items-center pt-3">
-                                        <div>
-                                            <img class="border-radius-50 me-2 vertical-align-middle w-40px"
-                                                src="img/avatar/avatar-01.jpg" alt="..." />
-                                            <h6 class="mb-0 d-inline-block display-30 font-weight-500">
-                                                Siemon Smelt
-                                            </h6>
-                                        </div>
-                                        <a href="blog-details.html" class="font-weight-600">Read More<i
-                                                class="fas fa-long-arrow-alt-right align-middle ms-2 display-30"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 mt-1-9">
-                        <div
-                            class="d-block d-md-flex border border-color-extra-light-gray bg-white border-radius-10 p-3 h-100">
-                            <div class="col-md-5 bg-img cover-background border-radius-10 min-height-250"
-                                data-background="img/blog/blog-02.jpg"></div>
-                            <div class="col-md-7">
-                                <div class="px-md-1-9 pt-4 pb-2 py-md-4px-md-1-9 pt-4 pb-2 py-md-4">
-                                    <ul class="list-style2 mb-3">
-                                        <li><a href="#!">15 Apr, 2022</a></li>
-                                        <li><a href="#!">Comment</a>(<span>08</span>)</li>
-                                    </ul>
-                                    <h4 class="h5 mb-3">
-                                        <a href="blog-details.html">Points To Be Considered Before Accept Job
-                                            Offer!...</a>
-                                    </h4>
-                                    <p class="mb-3">
-                                        A job ravenously at the same time as Far plenty that one
-                                        rank beheld after outside.
-                                    </p>
-                                    <div
-                                        class="border-top border-color-extra-light-gray d-flex justify-content-between align-items-center pt-3">
-                                        <div>
-                                            <img class="border-radius-50 me-2 vertical-align-middle w-40px"
-                                                src="img/avatar/avatar-02.jpg" alt="..." />
-                                            <h6 class="mb-0 d-inline-block display-30 font-weight-500">
-                                                Johanna Hoch
-                                            </h6>
-                                        </div>
-                                        <a href="blog-details.html" class="font-weight-500">Read More<i
-                                                class="fas fa-long-arrow-alt-right align-middle ms-2 display-30"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 mt-1-9">
-                        <div
-                            class="d-block d-md-flex border border-color-extra-light-gray bg-white border-radius-10 p-3 h-100">
-                            <div class="col-md-5 bg-img cover-background border-radius-10 min-height-250"
-                                data-background="img/blog/blog-03.jpg"></div>
-                            <div class="col-md-7">
-                                <div class="px-md-1-9 pt-4 pb-2 py-md-4">
-                                    <ul class="list-style2 mb-3">
-                                        <li><a href="#!">14 Apr, 2022</a></li>
-                                        <li><a href="#!">Comment</a>(<span>10</span>)</li>
-                                    </ul>
-                                    <h4 class="h5 mb-3">
-                                        <a href="blog-details.html">Most Powerful Thing You've Self Coaching
-                                            Scholars...</a>
-                                    </h4>
-                                    <p class="mb-3">
-                                        A job ravenously at the same time as Far plenty that one
-                                        rank beheld after outside.
-                                    </p>
-                                    <div
-                                        class="border-top border-color-extra-light-gray d-flex justify-content-between align-items-center pt-3">
-                                        <div>
-                                            <img class="border-radius-50 me-2 vertical-align-middle w-40px"
-                                                src="img/avatar/avatar-03.jpg" alt="..." />
-                                            <h6 class="mb-0 d-inline-block display-30 font-weight-500">
-                                                Arnaud Brian
-                                            </h6>
-                                        </div>
-                                        <a href="blog-details.html" class="font-weight-500">Read More<i
-                                                class="fas fa-long-arrow-alt-right align-middle ms-2 display-30"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 mt-1-9">
-                        <div
-                            class="d-block d-md-flex border border-color-extra-light-gray bg-white border-radius-10 p-3 h-100">
-                            <div class="col-md-5 bg-img cover-background border-radius-10 min-height-250"
-                                data-background="img/blog/blog-04.jpg"></div>
-                            <div class="col-md-7">
-                                <div class="px-md-1-9 pt-4 pb-2 py-md-4">
-                                    <ul class="list-style2">
-                                        <li><a href="#!">11 Apr, 2022</a></li>
-                                        <li><a href="#!">Comment</a>(<span>05</span>)</li>
-                                    </ul>
-                                    <h4 class="h5 mb-3">
-                                        <a href="blog-details.html">Job Interview Tips For Older Workers...</a>
-                                    </h4>
-                                    <p class="mb-3">
-                                        A job ravenously at the same time as Far plenty that one
-                                        rank beheld after outside.
-                                    </p>
-                                    <div
-                                        class="border-top border-color-extra-light-gray d-flex justify-content-between align-items-center pt-3">
-                                        <div>
-                                            <img class="border-radius-50 me-2 vertical-align-middle w-40px"
-                                                src="img/avatar/avatar-04.jpg" alt="..." />
-                                            <h6 class="mb-0 d-inline-block display-30 font-weight-500">
-                                                Yolande Quirion
-                                            </h6>
-                                        </div>
-                                        <a href="blog-details.html" class="font-weight-500">Read More<i
-                                                class="fas fa-long-arrow-alt-right align-middle ms-2 display-30"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
         <!-- FOOTER
         ================================================== -->
