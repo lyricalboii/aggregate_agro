@@ -23,47 +23,53 @@ $v_code = rand ( 1000 , 9999 );
 
 
 
-        $invalid = false;
-            if(isset($_POST['email1'])){
-                $email = $_POST['email1'];
-                $pass = $_POST['password1'];
+$invalid = false;
+if(isset($_POST['email1'])){
+    $email = $_POST['email1'];
+    $pass = $_POST['password1'];
+    $user_occupation = $_POST['occupation'];
 
-                $sql = "SELECT * FROM `register` WHERE `email` = '$email' AND `password` = '$pass'";
-                $result = mysqli_query($con,$sql);
-                $row = mysqli_fetch_assoc($result);
-                if(mysqli_num_rows($result) > 0 ){
-                  if($row['verified']==1){
-                    echo "<script>console.log('email is verified')</script>";
-                  
-                    echo '<div class="alert alert-success" role="alert">
-                            Successfully Login.
-                        </div>';
-                    $_SESSION['loggedin'] = true;
-                    $_SESSION['email'] = $email;
-                    $_SESSION['online'] = "true";
-                    $_SESSION['id'] = $row['uid'];
-                    // console.log($_SESSION['id']);
-                    $_SESSION['verified'] = true;
-                    // setcookie('email',$email,time()+60*60*24*30);
-                    header("location: index-02.php");
-                    // header("location: myprofile1.php");
-                  
-                
-              }else{
-                $notv = true;
-                echo "<script>console.log('email not veified')</script>";
-              }
-            }else{
-                   echo "<script>console.log('Invalid login details')</script>";
-              $invalid = true;
-              
-              header("location: login.php");
-          }
-                
-                
-                
-            }
+    $sql = "SELECT * FROM `register` WHERE `email` = '$email' AND `password` = '$pass'";
+    $result = mysqli_query($con,$sql);
+    $row = mysqli_fetch_assoc($result);
+    if(mysqli_num_rows($result) > 0 ){
+        if($row['verified']==1){
+        if($user_occupation == 'farmer' && $row['occupation'] == 'farmer'){
+            header("location: index-02.php");
+        }else if($user_occupation == 'worker' && $row['occupation'] == 'worker'){
+            header("location: index-04.php");
+        }else if($user_occupation == 'seller' && $row['occupation'] == 'seller'){
+            header("location: commingsoon.php");
+        }else if($user_occupation == 'yard' && $row['occupation'] == 'yard'){
+            header("location: commingsoon.php");
+        }
+        echo "<script>console.log('email is verified')</script>";
         
+        $_SESSION['loggedin'] = true;
+        $_SESSION['email'] = $email;
+        $_SESSION['online'] = "true";
+        $_SESSION['id'] = $row['uid'];
+        // console.log($_SESSION['id']);
+        $_SESSION['verified'] = true;
+        // setcookie('email',$email,time()+60*60*24*30);
+        // header("location: myprofile1.php");
+        
+    
+    }else{
+    $notv = true;
+    echo "<script>console.log('email not veified')</script>";
+    }
+}else{
+        echo "<script>console.log('Invalid login details')</script>";
+    $invalid = true;
+    
+    header("location: login.php");
+}
+    
+    
+    
+}
+
     ?>
 
 <?php
@@ -96,7 +102,7 @@ $v_code = rand ( 1000 , 9999 );
 
                 $fullname = $first_name . ' ' .$last_name;
                 // echo $fullname;
-                $sql = "INSERT INTO `user_profile` ( `uid`,`picture`, `token`, `email`, `fullname`, `phoneno`, `address`, `gender`, `age`, `workhour`, `approxsalary`, `date`) VALUES ( $user_id,NULL,NULL , '{$mail}', '{$fullname}', '{$phoneno}', NULL, NULL, NULL, NULL,NULL, CURRENT_TIMESTAMP);";
+                $sql = "INSERT INTO `user_profile` ( `uid`,`picture`, `token`, `email`, `fullname`,`occupation`, `phoneno`, `address`, `gender`, `age`, `workhour`, `approxsalary`, `date`) VALUES ( $user_id,NULL,NULL , '{$mail}', '{$fullname}', '{$usr_occupation}', '{$phoneno}', NULL, NULL, NULL, NULL,NULL, CURRENT_TIMESTAMP);";
                 // $insert_userprofile = "INSERT INTO `user_profile` (`id`, `email`, `fullname`, `profile_picture`, `about`, `birthdate`, `gender`, `city`, `mothertongue`, `hobbys`, `maritualstatus`, `ethencity`, `heighest_education`, `occupation`, `annual_income`, `height`, `weight`, `any_disability`, `my_habbits`, `verified`, `is_online`, `date`) VALUES ($user_id, '$mail', '$fullname', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, current_timestamp())";
                 $_SESSION['email'] = $mail;
                 $_SESSION['loggedin'] = true;
@@ -203,6 +209,7 @@ $v_code = rand ( 1000 , 9999 );
     <!-- core style css -->
     <link href="css/styles.css" rel="stylesheet" />
     <!-- FontAwesome Icons -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
@@ -401,6 +408,15 @@ $v_code = rand ( 1000 , 9999 );
                                         required />
                                     <label>Password</label>
                                 </div>
+                                <div class="input-wrap">
+                                <label>Occupation : </label>
+                                <select name="occupation" class="occupation" required>
+                                    <option value="farmer" seleted>Farmer</option>
+                                    <option value="worker">Worker</option>
+                                    <option value="seller">Seller</option>
+                                    <option value="yard">Yard</option>
+                                </select>
+                                </div>
                                 <?php
                     // if($invalid){
                     //     echo '<div class="alert alert-danger" role="alert">
@@ -541,11 +557,6 @@ $v_code = rand ( 1000 , 9999 );
                 </div>
             </div>
         </main>
-
-        <!-- <div class="containerrr">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis alias qui numquam tempore hic doloremque labore impedit ipsum est! Tenetur iusto quasi rerum ratione sapiente provident dolores voluptatem similique veritatis repudiandae facere, quod amet deserunt eaque, odio beatae! Eveniet fuga sit consectetur sed perferendis suscipit aliquid, tenetur sequi corrupti, fugiat, laborum numquam itaque possimus alias repudiandae exercitationem! Eligendi exercitationem quasi aut ex illum voluptates voluptatem. Ab cumque sed ullam consequuntur esse atque reprehenderit culpa, assumenda alias ad ducimus, necessitatibus, autem quasi fugit! Quisquam nisi voluptatem consequatur possimus consequuntur, accusantium quae, enim blanditiis error voluptate commodi accusamus. Necessitatibus amet obcaecati qui sit quasi eligendi dicta totam laudantium aliquid, fuga vero. Sunt perferendis vitae aspernatur maiores sapiente blanditiis reprehenderit, modi dicta necessitatibus voluptates quis ipsam asperiores! Natus velit iste, aliquid quia provident quasi illo doloribus voluptate, temporibus ducimus itaque sapiente aspernatur a debitis animi magnam officia laboriosam tenetur. Libero tenetur quisquam explicabo. Corrupti aspernatur excepturi laudantium enim iusto perferendis ducimus. Quam officiis deserunt culpa asperiores ipsum esse aliquid quidem a vitae voluptate repellendus ad iure reprehenderit dolores molestias iste libero, blanditiis error. Sapiente eum obcaecati rem laudantium ipsam amet aut ex magni, expedita id voluptate perferendis quae consequatur possimus similique fuga consectetur, placeat iusto! Asperiores, quasi. Sed nisi quibusdam aspernatur perspiciatis, autem nobis perferendis magnam temporibus mollitia nam reprehenderit dolores magni. Consequatur velit blanditiis doloremque sit cupiditate vero voluptatum facere sapiente reiciendis. Optio iste illum consequuntur quis perferendis odio sint, molestiae necessitatibus aperiam maxime incidunt vitae beatae sed aspernatur placeat, mollitia modi asperiores. Sint sit adipisci illum quod enim velit porro quibusdam necessitatibus praesentium amet. Quis at quae voluptas possimus, laboriosam, nesciunt, totam quos unde eaque porro placeat ex dolorum repellendus amet repudiandae corrupti aut. Nulla numquam distinctio enim, laudantium tempora nostrum dolore architecto cupiditate, minus soluta voluptates dolor. Consequuntur quisquam, aliquam hic fugit est veniam ullam libero, facilis laudantium aut alias esse saepe voluptate atque, excepturi iste. Odio illo reiciendis ea. Delectus molestiae sapiente quaerat libero quam saepe autem nemo tempora, aperiam perspiciatis ab est a quod, vel ullam magni vero quo molestias, asperiores harum alias ratione rerum veniam aliquam! Amet reprehenderit et doloremque voluptatum a sapiente dolorum ullam autem iusto aut repellat, officiis vero obcaecati ab molestias aspernatur eos corrupti voluptas optio dicta? Nam id doloribus atque reiciendis esse assumenda quas alias labore repellendus iste expedita adipisci praesentium cum debitis nisi enim quia, quidem dolore perspiciatis modi quis rem error fuga! Possimus dolorum provident quis, quam eaque laborum assumenda deleniti id. Animi quam velit impedit, beatae numquam officia incidunt cum laboriosam doloribus, accusamus, adipisci suscipit. Neque dolor nesciunt modi necessitatibus fuga culpa illo fugiat a laborum totam. Distinctio quaerat nobis nam quos asperiores, quia ex doloremque eaque nulla numquam, reprehenderit modi mollitia quasi. Modi a consequuntur vero nesciunt odio fuga assumenda perspiciatis. Veritatis vel totam odit culpa deserunt reiciendis. Repellat maiores fuga voluptates tempora a quia error molestiae delectus, illum reprehenderit rerum iure odit, adipisci accusantium asperiores, numquam magni assumenda. Deserunt minus ipsum enim alias praesentium beatae vel ex ipsa.</p>
-    </div> -->
-
 
 
         <!-- FOOTER
