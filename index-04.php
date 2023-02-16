@@ -96,7 +96,20 @@ $_SESSION['sendfrom'] =$id;
 .crop1_img{
  
 }
-    </style>
+ 
+.footer_row{
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer_container{
+    padding-bottom: 50px;
+}
+
+
+ 
+ </style>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="img/logos/logo.png" />
@@ -128,7 +141,7 @@ $_SESSION['sendfrom'] =$id;
         <!-- HEADER
         ================================================== -->
         <?php
-        include "nav.php";
+        include "nav/f_nav.php";
         ?>
 
         <!-- BANNER
@@ -174,6 +187,19 @@ $_SESSION['sendfrom'] =$id;
                     <h2>Latest job request</h2>
                 </div>
                 <div class="recent-jobs owl-carousel owl-theme">
+                    <?php
+                    echo $id;
+                    $query = "SELECT * FROM `request` WHERE `receivingid` = $id";
+                    $result_query = mysqli_query($con,$query);
+                    $num = mysqli_num_rows($result_query);
+                    if($num <= 0){
+                        echo "no request available";
+                    }else{
+                        while($row = mysqli_fetch_assoc($result_query)){
+                            echo $row['fullname'];
+                        }
+                    }
+                    ?>
                     <div class="card card-style10">
                         <div class="card-body">
                             <!-- <span class="popular-jobs-status">Full Time</span> -->
@@ -946,13 +972,27 @@ $_SESSION['sendfrom'] =$id;
         <!-- FOOTER
         ================================================== -->
         <footer>
-            <div class="container">
-                <div class="row mt-n2-6">
+            <div class="container footer_container">
+                <div class="row mt-n2-6 footer_row">
+                <div class="container border-bottom border-color-light-white py-2-5 py-md-6 mb-6 mb-md-8 mb-lg-10">
+                <div class="row justify-content-center align-items-center mt-n1-9">
+                    <div class="col-xl-6 mt-1-9">
+                        <div class="d-sm-flex align-items-center">
+                            <div class="flex-shrink-0 mb-1-6 mb-sm-0">
+                                <a href="index.html" class="footer-logo"><img src="img/logos/logo.png" alt="...">Aggregate Agro</a>
+                            </div>
+                            <div class="flex-grow-1 border-sm-start border-color-light-white ms-sm-4 ps-sm-4 border-width-2">
+                                <p class="mb-0 display-30 text-white opacity9 w-lg-95">Create a free account to discover lots of Jobs & Find Opportunities around you!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
                     <div class="col-sm-6 col-xl-4 mt-2-6">
                         <h3 class="h5 mb-1-6 text-white">Contact Us</h3>
                         <p class="mb-1-6 text-white opacity9">
                             Advertise your jobs to hundreds of thousands of monthly
-                            customers and seek 15.8 million CV in our database.
+                            customers and seek 100 CV in our database.
                         </p>
                         <ul class="contact-list">
                             <li class="d-flex">
@@ -969,61 +1009,39 @@ $_SESSION['sendfrom'] =$id;
                     </div>
                     <div class="col-sm-6 col-xl-2 mt-2-6">
                         <div class="ps-md-1-9">
-                            <h3 class="h5 mb-1-6 text-white">Information</h3>
+                            <h3 class="h5 mb-1-6 text-white">About us</h3>
                             <ul class="footer-list-style1">
-                                <li><a href="aboutus.html">About us</a></li>
-                                <li><a href="blog-grid.html">Blog</a></li>
+                                <li><a href="aboutus.html">Our Services</a></li>
+                                <li><a href="blog-grid.html">Our Client</a></li>
                                 <li><a href="how-it-works.html">Our Process</a></li>
-                                <li><a href="pricing-plans.html">Our Pricing</a></li>
                                 <li><a href="contact-us.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
+
                     <div class="col-sm-6 col-xl-2 mt-2-6">
-                        <div class="ps-xl-1-9">
-                            <h3 class="h5 mb-1-6 text-white">Candidates</h3>
+                        <div class="ps-md-1-9">
+                            <h3 class="h5 mb-1-6 text-white">Social Services</h3>
                             <ul class="footer-list-style1">
-                                <li><a href="candidate-applied-job.html">Applied Job</a></li>
-                                <li><a href="candidate-cv-manager.html">CV Manager</a></li>
-                                <li>
-                                    <a href="candidate-shortlisted-jobs.html">Shortlisted Jobs</a>
-                                </li>
-                                <li><a href="candidate-job-alerts.html">Job Alerts</a></li>
-                                <li><a href="candidate-dashboard.html">Dashboard</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bar borders-top border-color-light-white">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center mb-3">
-                            <ul class="footer-social-style1">
-                                <li>
-                                    <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <li>
+                                    <a href="#!"><i class="fab fa-facebook-f"></i> &nbsp; Facebook </a>
                                 </li>
                                 <li>
-                                    <a href="#!"><i class="fab fa-twitter"></i></a>
+                                    <a href="#!"><i class="fab fa-twitter"></i>&nbsp;  twitter </a>
                                 </li>
                                 <li>
-                                    <a href="#!"><i class="fab fa-youtube"></i></a>
+                                    <a href="#!"><i class="fab fa-youtube"></i>&nbsp; youtube </a>
                                 </li>
                                 <li>
-                                    <a href="#!"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#!"><i class="fab fa-linkedin-in"></i>&nbsp; linked-in </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-12 text-center">
-                            <p class="d-inline-block text-white mb-0">
-                                &copy; <span class="current-year"></span>
-                                <a href="https://www.chitrakootweb.com/" target="_blank"
-                                    class="text-primary white-hover">Aggregate Agro</a>
-                            </p>
-                        </div>
                     </div>
+               
                 </div>
             </div>
+        
         </footer>
     </div>
 

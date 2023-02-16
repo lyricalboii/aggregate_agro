@@ -119,6 +119,16 @@ i.fa.fa-search {
     font-size: 20px;
 }
 
+.footer_row{
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer_container{
+    padding-bottom: 50px;
+}
+
 
     </style>
 
@@ -138,7 +148,7 @@ i.fa.fa-search {
         <!-- HEADER
         ================================================== -->
             <?php 
-                include "nav.php";
+                include "nav/w_nav.php";
             ?>
 
 
@@ -573,8 +583,10 @@ if($num3 > 0){
 
         <!-- FOOTER
         ================================================== -->
-        <footer class="pt-0">
-            <div class="container border-bottom border-color-light-white py-2-5 py-md-6 mb-6 mb-md-8 mb-lg-10">
+        <footer>
+            <div class="container footer_container">
+                <div class="row mt-n2-6 footer_row">
+                <div class="container border-bottom border-color-light-white py-2-5 py-md-6 mb-6 mb-md-8 mb-lg-10">
                 <div class="row justify-content-center align-items-center mt-n1-9">
                     <div class="col-xl-6 mt-1-9">
                         <div class="d-sm-flex align-items-center">
@@ -582,94 +594,66 @@ if($num3 > 0){
                                 <a href="index.html" class="footer-logo"><img src="img/logos/logo.png" alt="...">Aggregate Agro</a>
                             </div>
                             <div class="flex-grow-1 border-sm-start border-color-light-white ms-sm-4 ps-sm-4 border-width-2">
-                                <p class="mb-0 display-30 text-white opacity9 w-lg-95">Create a free account to discover lots of Jobs & Career Opportunities around you!</p>
+                                <p class="mb-0 display-30 text-white opacity9 w-lg-95">Create a free account to discover lots of Jobs & Find Opportunities around you!</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row mt-n2-6 footer_info">
-                    <div class="col-sm-6 col-lg-3 mt-2-6">
-                        <h3 class="h5 mb-1-6 mb-lg-1-9 text-white">Contact Us</h3>
+                    <div class="col-sm-6 col-xl-4 mt-2-6">
+                        <h3 class="h5 mb-1-6 text-white">Contact Us</h3>
+                        <p class="mb-1-6 text-white opacity9">
+                            Advertise your jobs to hundreds of thousands of monthly
+                            customers and seek 100 CV in our database.
+                        </p>
                         <ul class="contact-list">
-                            <li class="d-flex"><span class="fa fa-home pe-3 text-white"></span><a href="#!">B-110 Royal Arcadess, Mota Varachha, Surat, Gujarat</a></li>
-                            <li class="d-flex"><span class="fa fa-phone-alt pe-3 text-white"></span><a href="#!">(+44) 123 456 789</a></li>
-                            <li class="d-flex"><span class="fa fa-envelope pe-3 text-white"></span><a href="#!">info@example.com</a></li>
+                            <li class="d-flex">
+                                <span class="fa fa-home pe-3 text-white"></span><a href="#!">mota varachha ,surat</a>
+                            </li>
+                            <li class="d-flex">
+                                <span class="fa fa-phone-alt pe-3 text-white"></span><a href="#!">(+91) 78744 67710</a>
+                            </li>
+                            <li class="d-flex">
+                                <span class="fa fa-envelope pe-3 text-white"></span><a
+                                    href="#!">renishsuriya1441@gmail.com</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-sm-6 col-lg-2 mt-2-6">
-                        <div class="ps-sm-1-9">
-                            <h3 class="h5 mb-1-6 mb-lg-1-9 text-white">Explore</h3>
+                    <div class="col-sm-6 col-xl-2 mt-2-6">
+                        <div class="ps-md-1-9">
+                            <h3 class="h5 mb-1-6 text-white">About us</h3>
                             <ul class="footer-list-style1">
-                                <li><i class="fa-solid fa-house-user"></i> &nbsp; <a href="aboutus.html">Home</a></li>
-                                <li> <i class="fa-solid fa-briefcase"></i> &nbsp; <a href="blog-grid.html">Job</a></li>
-                                <li><i class="fa-solid fa-a"></i> &nbsp; <a href="how-it-works.html">About Us</a></li>
-                                <li><i class="fa-solid fa-address-card"></i> &nbsp; <a href="pricing-plans.html">Contact Us</a></li>
+                                <li><a href="aboutus.html">Our Services</a></li>
+                                <li><a href="blog-grid.html">Our Client</a></li>
+                                <li><a href="how-it-works.html">Our Process</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
-                
-                    <div class="col-sm-6 col-lg-3 mt-2-6">
-                        <div class="ps-lg-2-2 ps-xl-2-5">
-                            <h3 class="h5 mb-1-6 mb-lg-1-9 text-white">Subscribe</h3>
-                            <p class="text-white mb-4">Subscribe to get the latest jobs posted, candidates...</p>
-                            <form class="quform newsletter-form" action="https://jobboard.websitelayout.net/quform/newsletter-two.php" method="post" enctype="multipart/form-data" onclick="">
-                                <div class="quform-elements">
-                                    <div class="row">
-                                        <!-- Begin Text input element -->
-                                        <div class="col-md-12">
-                                            <div class="quform-element">
-                                                <div class="quform-input">
-                                                    <input class="form-control" id="email_address" type="text" name="email_address" placeholder="Subscribe with us" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Text input element -->
 
-                                        <!-- Begin Submit button -->
-                                        <div class="col-md-12">
-                                            <div class="quform-submit-inner">
-                                                <button class="btn btn-white text-primary m-0" type="submit"><span><i class="fas fa-paper-plane text-primary"></i></span></button>
-                                            </div>
-                                            <div class="quform-loading-wrap text-start"><span class="quform-loading"></span></div>
-                                        </div>
-                                        <!-- End Submit button -->
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bar borders-top border-color-light-white">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-7 text-center text-md-start mt-3 mt-md-0 order-2 order-md-1">
-                            <p class="d-inline-block text-white mb-0">&copy; <span class="current-year"></span> 
-                                <a href="https://www.chitrakootweb.com/" target="_blank" class="text-primary white-hover">Aggregate Agro</a>
-                            </p>
-                        </div>
-                        <div class="col-md-5 text-center text-md-end order-1 order-md-2">
-                            <p class="text-white d-inline-block mb-0 align-middle">Follow Us :</p>
-                            <ul class="footer-social-style1">
-                                <li>
-                                    <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <div class="col-sm-6 col-xl-2 mt-2-6">
+                        <div class="ps-md-1-9">
+                            <h3 class="h5 mb-1-6 text-white">Social Services</h3>
+                            <ul class="footer-list-style1">
+                            <li>
+                                    <a href="#!"><i class="fab fa-facebook-f"></i> &nbsp; Facebook </a>
                                 </li>
                                 <li>
-                                    <a href="#!"><i class="fab fa-twitter"></i></a>
+                                    <a href="#!"><i class="fab fa-twitter"></i>&nbsp;  twitter </a>
                                 </li>
                                 <li>
-                                    <a href="#!"><i class="fab fa-youtube"></i></a>
+                                    <a href="#!"><i class="fab fa-youtube"></i>&nbsp; youtube </a>
                                 </li>
                                 <li>
-                                    <a href="#!"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#!"><i class="fab fa-linkedin-in"></i>&nbsp; linked-in </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+               
                 </div>
             </div>
+        
         </footer>
 
     </div>

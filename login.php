@@ -34,9 +34,9 @@ if(isset($_POST['email1'])){
     $row = mysqli_fetch_assoc($result);
     if(mysqli_num_rows($result) > 0 ){
         if($row['verified']==1){
-        if($user_occupation == 'farmer' && $row['occupation'] == 'farmer'){
+        if($user_occupation == 'worker' && $row['occupation'] == 'worker'){
             header("location: index-02.php");
-        }else if($user_occupation == 'worker' && $row['occupation'] == 'worker'){
+        }else if($user_occupation == 'farmer' && $row['occupation'] == 'farmer'){
             header("location: index-04.php");
         }else if($user_occupation == 'seller' && $row['occupation'] == 'seller'){
             header("location: commingsoon.php");

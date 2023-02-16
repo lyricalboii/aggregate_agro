@@ -119,6 +119,16 @@ i.fa.fa-search {
     font-size: 20px;
 }
 
+.footer_row{
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer_container{
+    padding-bottom: 50px;
+}
+
 
     </style>
 
@@ -137,7 +147,7 @@ i.fa.fa-search {
         <!-- HEADER
         ================================================== -->
         <?php
-            include "nav.php";
+            include "nav/w_nav.php";
         ?>
 
 
@@ -203,15 +213,7 @@ i.fa.fa-search {
                                     <p class="mb-0">Single one in all our jobs has a few sort of flexibility option.</p>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0">
-                                    <img src="img/content/author-sign.png" alt="...">
-                                </div>
-                                <div class="flex-grow-1 border-start border-width-2 border-color-extra-light-gray ps-3 ps-sm-4 ms-3 ms-sm-4">
-                                    <h5>Svend Heilmann</h5>
-                                    <p class="mb-0">Co-Founder</p>
-                                </div>
-                            </div>
+                    
                         </div>
                     </div>
                 </div>
@@ -229,10 +231,11 @@ i.fa.fa-search {
                 <div class="row mt-n1-9">
                     <div class="col-md-6 col-lg-4 mt-1-9">
                         <div class="service-wrapper">
+                        
                             <div class="service-icons">
-                                <img src="img/icons/icon-18.png" alt="...">
+                                <img src="img/icons/icon-20.png" alt="...">
                             </div>
-                            <h4 class="h5 mb-3">Resume Upload</h4>
+                            <h4 class="h5 mb-3">Display Jobs</h4>
                             <p class="mb-0 w-90 mx-auto">If success is a process with a number of defined steps.</p>
                         </div>
                     </div>
@@ -241,16 +244,16 @@ i.fa.fa-search {
                             <div class="service-icons">
                                 <img src="img/icons/icon-19.png" alt="...">
                             </div>
-                            <h4 class="h5 mb-3">CV Search</h4>
+                            <h4 class="h5 mb-3">Find Job</h4>
                             <p class="mb-0 w-90 mx-auto">If success is a process with a number of defined steps.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mt-1-9">
                         <div class="service-wrapper">
-                            <div class="service-icons">
-                                <img src="img/icons/icon-20.png" alt="...">
+                        <div class="service-icons">
+                                <img src="img/icons/icon-18.png" alt="...">
                             </div>
-                            <h4 class="h5 mb-3">Display Jobs</h4>
+                            <h4 class="h5 mb-3">Apply Job</h4>
                             <p class="mb-0 w-90 mx-auto">If success is a process with a number of defined steps.</p>
                         </div>
                     </div>
@@ -283,7 +286,7 @@ i.fa.fa-search {
                             <div class="number-wrapper">
                                 <div class="number">02</div>
                             </div>
-                            <h5 class="mb-lg-3">CV / Resume Upload</h5>
+                            <h5 class="mb-lg-3">Display Job</h5>
                             <p class="mb-0 w-md-90 mx-auto">Search all the open positions on the web that suits you.</p>
                         </div>
                     </div>
@@ -302,7 +305,7 @@ i.fa.fa-search {
                             <div class="number-wrapper">
                                 <div class="number">04</div>
                             </div>
-                            <h5 class="mb-lg-3">Apply Them</h5>
+                            <h5 class="mb-lg-3">Apply Job</h5>
                             <p class="mb-0 w-md-90 mx-auto">Search all the open positions on the web that suits you.</p>
                         </div>
                     </div>
@@ -375,165 +378,77 @@ i.fa.fa-search {
 
         <!-- FOOTER
         ================================================== -->
-        <footer class="pt-0">
-            <div class="container border-bottom border-color-light-white py-2-5 py-md-6 mb-6 mb-md-8 mb-lg-10">
+        <footer>
+            <div class="container footer_container">
+                <div class="row mt-n2-6 footer_row">
+                <div class="container border-bottom border-color-light-white py-2-5 py-md-6 mb-6 mb-md-8 mb-lg-10">
                 <div class="row justify-content-center align-items-center mt-n1-9">
                     <div class="col-xl-6 mt-1-9">
                         <div class="d-sm-flex align-items-center">
                             <div class="flex-shrink-0 mb-1-6 mb-sm-0">
-                               <a href="#">Aggregate Agro</a>
+                                <a href="index.html" class="footer-logo"><img src="img/logos/logo.png" alt="...">Aggregate Agro</a>
                             </div>
                             <div class="flex-grow-1 border-sm-start border-color-light-white ms-sm-4 ps-sm-4 border-width-2">
-                                <p class="mb-0 display-30 text-white opacity9 w-lg-95">Create a free account to discover lots of Jobs & Career Opportunities around you!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 mt-1-9">
-                        <div class="row">
-                            <div class="col-sm-4 mb-1-9 mb-sm-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="img/icons/icon-09.png" alt="...">
-                                    </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h3 class="h2 mb-1 countup font-weight-700 text-white">1327</h3>
-                                        <p class="mb-0 font-weight-600 text-white opacity9 display-30">Job Posted</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 mb-1-9 mb-sm-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="img/icons/icon-10.png" alt="...">
-                                    </div>
-                                    <div class="flex-grow-1 ms-4">
-                                        <h3 class="h2 mb-1 countup font-weight-700 text-white">150</h3>
-                                        <p class="mb-0 font-weight-600 text-white opacity9 display-30">Job Filled</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <img src="img/icons/icon-11.png" alt="...">
-                                    </div>
-                                    <div class="flex-grow-1 ms-4">
-                                        <h3 class="h2 mb-1 countup font-weight-700 text-white">220</h3>
-                                        <p class="mb-0 font-weight-600 text-white opacity9 display-30">Companies</p>
-                                    </div>
-                                </div>
+                                <p class="mb-0 display-30 text-white opacity9 w-lg-95">Create a free account to discover lots of Jobs & Find Opportunities around you!</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row mt-n2-6">
-                    <div class="col-sm-6 col-lg-3 mt-2-6">
-                        <h3 class="h5 mb-1-6 mb-lg-1-9 text-white">Contact Us</h3>
-                        <p class="mb-1-6 text-white opacity9">Advertise your jobs to hundreds of thousands of monthly customers and seek 15.8 million CV in our database.</p>
+                    <div class="col-sm-6 col-xl-4 mt-2-6">
+                        <h3 class="h5 mb-1-6 text-white">Contact Us</h3>
+                        <p class="mb-1-6 text-white opacity9">
+                            Advertise your jobs to hundreds of thousands of monthly
+                            customers and seek 100 CV in our database.
+                        </p>
                         <ul class="contact-list">
-                            <li class="d-flex"><span class="fa fa-home pe-3 text-white"></span><a href="#!">66 Guild Street 512B, Great North Town.</a></li>
-                            <li class="d-flex"><span class="fa fa-phone-alt pe-3 text-white"></span><a href="#!">(+44) 123 456 789</a></li>
-                            <li class="d-flex"><span class="fa fa-envelope pe-3 text-white"></span><a href="#!">info@example.com</a></li>
+                            <li class="d-flex">
+                                <span class="fa fa-home pe-3 text-white"></span><a href="#!">mota varachha ,surat</a>
+                            </li>
+                            <li class="d-flex">
+                                <span class="fa fa-phone-alt pe-3 text-white"></span><a href="#!">(+91) 78744 67710</a>
+                            </li>
+                            <li class="d-flex">
+                                <span class="fa fa-envelope pe-3 text-white"></span><a
+                                    href="#!">renishsuriya1441@gmail.com</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-sm-6 col-lg-2 mt-2-6">
-                        <div class="ps-sm-1-9">
-                            <h3 class="h5 mb-1-6 mb-lg-1-9 text-white">Information</h3>
+                    <div class="col-sm-6 col-xl-2 mt-2-6">
+                        <div class="ps-md-1-9">
+                            <h3 class="h5 mb-1-6 text-white">About us</h3>
                             <ul class="footer-list-style1">
-                                <li><a href="aboutus.html">About us</a></li>
-                                <li><a href="blog-grid.html">Blog</a></li>
+                                <li><a href="aboutus.html">Our Services</a></li>
+                                <li><a href="blog-grid.html">Our Client</a></li>
                                 <li><a href="how-it-works.html">Our Process</a></li>
-                                <li><a href="pricing-plans.html">Our Pricing</a></li>
                                 <li><a href="contact-us.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-2 mt-2-6">
-                        <div class="ps-lg-1-9">
-                            <h3 class="h5 mb-1-6 mb-lg-1-9 text-white">Candidates</h3>
-                            <ul class="footer-list-style1">
-                                <li><a href="candidate-applied-job.html">Applied Job</a></li>
-                                <li><a href="candidate-cv-manager.html">CV Manager</a></li>
-                                <li><a href="candidate-shortlisted-jobs.html">Shortlisted Jobs</a></li>
-                                <li><a href="candidate-job-alerts.html">Job Alerts</a></li>
-                                <li><a href="candidate-dashboard.html">Dashboard</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-2 mt-2-6">
-                        <div class="ps-sm-1-9 ps-lg-2-2 ps-xl-2-5">
-                            <h3 class="h5 mb-1-6 mb-lg-1-9 text-white">Employers</h3>
-                            <ul class="footer-list-style1">
-                                <li><a href="employer-packages.html">Job Packages</a></li>
-                                <li><a href="employer-company-profile.html">Company Profile</a></li>
-                                <li><a href="employer-manage-job.html">Manage Job</a></li>
-                                <li><a href="employer-resume-alerts.html">Resume Alerts</a></li>
-                                <li><a href="employer-post-job.html">Post a Job</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 mt-2-6">
-                        <div class="ps-lg-2-2 ps-xl-2-5">
-                            <h3 class="h5 mb-1-6 mb-lg-1-9 text-white">Join Newsletter</h3>
-                            <p class="text-white mb-4">Subscribe to get the latest jobs posted, candidates...</p>
-                            <form class="quform newsletter-form" action="https://jobboard.websitelayout.net/quform/newsletter-two.php" method="post" enctype="multipart/form-data" onclick="">
-                                <div class="quform-elements">
-                                    <div class="row">
-                                        <!-- Begin Text input element -->
-                                        <div class="col-md-12">
-                                            <div class="quform-element">
-                                                <div class="quform-input">
-                                                    <input class="form-control" id="email_address" type="text" name="email_address" placeholder="Subscribe with us" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Text input element -->
 
-                                        <!-- Begin Submit button -->
-                                        <div class="col-md-12">
-                                            <div class="quform-submit-inner">
-                                                <button class="btn btn-white text-primary m-0" type="submit"><span><i class="fas fa-paper-plane text-primary"></i></span></button>
-                                            </div>
-                                            <div class="quform-loading-wrap text-start"><span class="quform-loading"></span></div>
-                                        </div>
-                                        <!-- End Submit button -->
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bar borders-top border-color-light-white">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-7 text-center text-md-start mt-3 mt-md-0 order-2 order-md-1">
-                            <p class="d-inline-block text-white mb-0">&copy; <span class="current-year"></span> Aggregate Agro 
-                                <a href="https://www.chitrakootweb.com/" target="_blank" class="text-primary white-hover"></a>
-                            </p>
-                        </div>
-                        <div class="col-md-5 text-center text-md-end order-1 order-md-2">
-                            <p class="text-white d-inline-block mb-0 align-middle">Follow Us :</p>
-                            <ul class="footer-social-style1">
-                                <li>
-                                    <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <div class="col-sm-6 col-xl-2 mt-2-6">
+                        <div class="ps-md-1-9">
+                            <h3 class="h5 mb-1-6 text-white">Social Services</h3>
+                            <ul class="footer-list-style1">
+                            <li>
+                                    <a href="#!"><i class="fab fa-facebook-f"></i> &nbsp; Facebook </a>
                                 </li>
                                 <li>
-                                    <a href="#!"><i class="fab fa-twitter"></i></a>
+                                    <a href="#!"><i class="fab fa-twitter"></i>&nbsp;  twitter </a>
                                 </li>
                                 <li>
-                                    <a href="#!"><i class="fab fa-youtube"></i></a>
+                                    <a href="#!"><i class="fab fa-youtube"></i>&nbsp; youtube </a>
                                 </li>
                                 <li>
-                                    <a href="#!"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#!"><i class="fab fa-linkedin-in"></i>&nbsp; linked-in </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+               
                 </div>
             </div>
+        
         </footer>
 
     </div> 

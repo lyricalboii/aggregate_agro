@@ -89,7 +89,7 @@ $_SESSION['sendfrom'] =$id;
         <!-- HEADER
         ================================================== -->
         <?php 
-                include "nav.php";
+                include "nav/w_nav.php";
             ?>
 
         <!-- PAGE TITLE

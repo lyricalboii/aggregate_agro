@@ -296,7 +296,7 @@ $_SESSION['sendfrom'] =$id;
     ================================================== -->
     <div class="main-wrapper">
         <?php
-        include "nav.php";
+        include "nav/w_nav.php";
     ?>
 
     <div class="container" style="    height: 97%;

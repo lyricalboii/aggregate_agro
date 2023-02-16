@@ -105,7 +105,7 @@ else{
 
     
     <?php
-    include "nav.php";
+    include "nav/w_nav.php";
     ?>
 
 <section class="bg-very-light-gray">

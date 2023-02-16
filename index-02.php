@@ -283,6 +283,16 @@ $_SESSION['sendfrom'] =$id;
         max-width: 160px;
         margin-top: 30px;
     }
+
+    .footer_row{
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer_container{
+    padding-bottom: 50px;
+}
     </style>
 
 </head>
@@ -300,7 +310,7 @@ $_SESSION['sendfrom'] =$id;
         <!-- HEADER
         ================================================== -->
         <?php
-            include "nav.php";
+            include "nav/w_nav.php";
         ?>
 
         <!-- BANNER
@@ -1027,114 +1037,81 @@ $_SESSION['sendfrom'] =$id;
 
         <!-- NEWSLETTER
         ================================================== -->
-        <section class="bg-primary md">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7 mb-1-9 mb-lg-0 text-center text-lg-start">
-                        <h3 class="text-white">Subscribe to our Newsletter!</h3>
-                        <p class="text-white mb-0 opacity9">Sign up for our newsletter and study us on social media.</p>
-                    </div>
-                    <div class="col-lg-5">
-                        <form class="quform newsletter-form"
-                            action="https://jobboard.websitelayout.net/quform/newsletter-two.php" method="post"
-                            enctype="multipart/form-data" onclick="">
-                            <div class="quform-elements">
-                                <div class="row">
-                                    <!-- Begin Text input element -->
-                                    <div class="col-md-12">
-                                        <div class="quform-element">
-                                            <div class="quform-input">
-                                                <input class="form-control border-radius-5" id="email_address"
-                                                    type="text" name="email_address" placeholder="Subscribe with us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Text input element -->
-
-                                    <!-- Begin Submit button -->
-                                    <div class="col-md-12">
-                                        <div class="quform-submit-inner">
-                                            <button class="btn btn-white text-primary m-0" type="submit"><i
-                                                    class="fas fa-paper-plane"></i></button>
-                                        </div>
-                                        <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
-                                    </div>
-                                    <!-- End Submit button -->
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+ 
 
         <!-- FOOTER
         ================================================== -->
-        <footer class="bg-light">
-            <div class="container">
-                <div class="row mt-n2-6">
-                    <div class="col-sm-6 col-lg-5 mt-2-6">
-                        <a href="#!" class="footer-logo"><img src="img/logos/logo.png" class="mb-1-6" alt="..."></a>
-                        <p>Advertise your jobs to hundreds of thousands of monthly customers and seek 15.8 million CV in
-                            our database.</p>
-                        <ul class="contact-list black">
-                            <li class="d-flex"><span class="fa fa-home pe-3"></span><a href="#!">66 Guild Street 512B,
-                                    Great North Town.</a></li>
-                            <li class="d-flex"><span class="fa fa-phone-alt pe-3"></span><a href="#!">(+44) 123 456
-                                    789</a></li>
-                            <li class="d-flex"><span class="fa fa-envelope pe-3"></span><a
-                                    href="#!">info@example.com</a></li>
+        <footer>
+            <div class="container footer_container">
+                <div class="row mt-n2-6 footer_row">
+                <div class="container border-bottom border-color-light-white py-2-5 py-md-6 mb-6 mb-md-8 mb-lg-10">
+                <div class="row justify-content-center align-items-center mt-n1-9">
+                    <div class="col-xl-6 mt-1-9">
+                        <div class="d-sm-flex align-items-center">
+                            <div class="flex-shrink-0 mb-1-6 mb-sm-0">
+                                <a href="index.html" class="footer-logo"><img src="img/logos/logo.png" alt="...">Aggregate Agro</a>
+                            </div>
+                            <div class="flex-grow-1 border-sm-start border-color-light-white ms-sm-4 ps-sm-4 border-width-2">
+                                <p class="mb-0 display-30 text-white opacity9 w-lg-95">Create a free account to discover lots of Jobs & Find Opportunities around you!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-sm-6 col-xl-4 mt-2-6">
+                        <h3 class="h5 mb-1-6 text-white">Contact Us</h3>
+                        <p class="mb-1-6 text-white opacity9">
+                            Advertise your jobs to hundreds of thousands of monthly
+                            customers and seek 100 CV in our database.
+                        </p>
+                        <ul class="contact-list">
+                            <li class="d-flex">
+                                <span class="fa fa-home pe-3 text-white"></span><a href="#!">mota varachha ,surat</a>
+                            </li>
+                            <li class="d-flex">
+                                <span class="fa fa-phone-alt pe-3 text-white"></span><a href="#!">(+91) 78744 67710</a>
+                            </li>
+                            <li class="d-flex">
+                                <span class="fa fa-envelope pe-3 text-white"></span><a
+                                    href="#!">renishsuriya1441@gmail.com</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-sm-6 col-lg-2 offset-lg-1 mt-2-6">
-                        <div class="ps-sm-1-6 ps-lg-0">
-                            <h3 class="h5 mb-1-6 mb-lg-1-9">Information</h3>
-                            <ul class="footer-list-style2">
-                                <li><a href="aboutus.html">About us</a></li>
-                                <li><a href="blog-grid.html">Blog</a></li>
+                    <div class="col-sm-6 col-xl-2 mt-2-6">
+                        <div class="ps-md-1-9">
+                            <h3 class="h5 mb-1-6 text-white">About us</h3>
+                            <ul class="footer-list-style1">
+                                <li><a href="aboutus.html">Our Services</a></li>
+                                <li><a href="blog-grid.html">Our Client</a></li>
                                 <li><a href="how-it-works.html">Our Process</a></li>
-                                <li><a href="pricing-plans.html">Our Pricing</a></li>
                                 <li><a href="contact-us.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-2 mt-2-6">
-                        <h3 class="h5 mb-1-6 mb-lg-1-9">Candidates</h3>
-                        <ul class="footer-list-style2">
-                            <li><a href="candidate-applied-job.html">Applied Job</a></li>
-                            <li><a href="candidate-cv-manager.html">CV Manager</a></li>
-                            <li><a href="candidate-shortlisted-jobs.html">Shortlisted Jobs</a></li>
-                            <li><a href="candidate-job-alerts.html">Job Alerts</a></li>
-                            <li><a href="candidate-dashboard.html">Dashboard</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-lg-2 mt-2-6">
-                        <div class="ps-sm-1-6 ps-lg-0">
-                            <h3 class="h5 mb-1-6 mb-lg-1-9">Employers</h3>
-                            <ul class="footer-list-style2">
-                                <li><a href="employer-packages.html">Job Packages</a></li>
-                                <li><a href="employer-company-profile.html">Company Profile</a></li>
-                                <li><a href="employer-manage-job.html">Manage Job</a></li>
-                                <li><a href="employer-resume-alerts.html">Resume Alerts</a></li>
-                                <li><a href="employer-post-job.html">Post a Job</a></li>
+
+                    <div class="col-sm-6 col-xl-2 mt-2-6">
+                        <div class="ps-md-1-9">
+                            <h3 class="h5 mb-1-6 text-white">Social Services</h3>
+                            <ul class="footer-list-style1">
+                            <li>
+                                    <a href="#!"><i class="fab fa-facebook-f"></i> &nbsp; Facebook </a>
+                                </li>
+                                <li>
+                                    <a href="#!"><i class="fab fa-twitter"></i>&nbsp;  twitter </a>
+                                </li>
+                                <li>
+                                    <a href="#!"><i class="fab fa-youtube"></i>&nbsp; youtube </a>
+                                </li>
+                                <li>
+                                    <a href="#!"><i class="fab fa-linkedin-in"></i>&nbsp; linked-in </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
+               
                 </div>
             </div>
-            <div class="footer-bar bg-white">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <p class="d-inline-block mb-0">&copy; <span class="current-year"></span> Job Board Powered
-                                by
-                                <a href="https://www.chitrakootweb.com/" target="_blank"
-                                    class="text-primary secondary-hover">Chitrakoot Web</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
         </footer>
 
     </div>
