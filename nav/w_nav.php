@@ -46,17 +46,11 @@
                
                                         <li><a href="about_us.php">About Us</a>
                                         </li>
-                                        <li><a href="#!">Contact Us</a>
+                                        <li><a href="contact-us.php">Contact Us</a>
                                         </li>
 
-                                        <li><a href="#!">Explore</a>
-                                            <ul>
-                                                <!-- <li><a href="hirejob.php">Hire Worker</a>
-                                                </li> -->
-                                                <li>
-                                                    <a href="logout.php">Log out</a>
-                                                </li>
-                                            </ul>
+                                        <li><a href="logout.php">Log out</a>
+                                           
                                         </li>
                                     </ul>
                                     <!-- end menu area -->

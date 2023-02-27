@@ -370,11 +370,11 @@ $_SESSION['sendfrom'] =$id;
                             </div>
                             <!--End Job Search Form -->
                             <!-- Popular Search -->
-                            <div class="popular-searches">
+                            <!-- <div class="popular-searches">
                                 <span class="pe-3 font-weight-600">Lorem ipsum dolor sit amet, consectetur adipisicing
                                     elit. Sed nulla quam excepturi nostrum hic fuga, nesciunt quo illum natus
                                     dignissimos? </span>
-                            </div>
+                            </div> -->
                             <!-- End Popular Search -->
                         </div>
                     </div>
@@ -395,13 +395,13 @@ $_SESSION['sendfrom'] =$id;
                                         <i class="ti-export display-25 text-primary"></i>
                                     </div>
                                     <div class="flex-grow-1 ms-3">
-                                        <h4 class="h6 mb-0">Upload Your CV</h4>
-                                        <small>It only takes a few seconds</small>
+                                        <h4 class="h6 mb-0">Find Your Jobs</h4>
+                                        <small>It only takes a few Minitues</small>
                                     </div>
                                 </div>
                             </div>
                             <div class="banner-image-text bottom-text text-center d-none d-sm-block">
-                                <h6 class="mb-3">10k+ Candidates</h6>
+                                <h6 class="mb-3">100+ Workers</h6>
                                 <ul class="list-unstyled users-list m-0">
                                     <li>
                                         <img class="rounded-circle" src="img/avatar/avatar-01.jpg" alt="...">
@@ -437,7 +437,7 @@ $_SESSION['sendfrom'] =$id;
                 <div class="job-categories owl-carousel owl-theme">
                     <div class="card card-style5">
                         <div class="categories-img bg-img cover-background min-height-250"
-                            data-background="img/content/job-categorie-01.jpg"></div>
+                            data-background="img/bg/worker1.jpg"></div>
                         <div class="card-body">
                             <span class="job-position">02 Jobs</span>
                             <div class="d-flex align-items-center">
@@ -455,7 +455,7 @@ $_SESSION['sendfrom'] =$id;
                     </div>
                     <div class="card card-style5">
                         <div class="categories-img bg-img cover-background min-height-250"
-                            data-background="img/content/job-categorie-02.jpg"></div>
+                            data-background="img/bg/worker2.jpg"></div>
                         <div class="card-body">
                             <span class="job-position">86 Jobs</span>
                             <div class="d-flex align-items-center">
@@ -474,7 +474,7 @@ $_SESSION['sendfrom'] =$id;
                     </div>
                     <div class="card card-style5">
                         <div class="categories-img bg-img cover-background min-height-250"
-                            data-background="img/content/job-categorie-03.jpg"></div>
+                            data-background="img/bg/worker2.jpg"></div>
                         <div class="card-body">
                             <span class="job-position">20 Jobs</span>
                             <div class="d-flex align-items-center">
@@ -493,7 +493,7 @@ $_SESSION['sendfrom'] =$id;
                     </div>
                     <div class="card card-style5">
                         <div class="categories-img bg-img cover-background min-height-250"
-                            data-background="img/content/job-categorie-04.jpg"></div>
+                            data-background="img/bg/worker2.jpg"></div>
                         <div class="card-body">
                             <span class="job-position">12 Jobs</span>
                             <div class="d-flex align-items-center">
@@ -511,7 +511,7 @@ $_SESSION['sendfrom'] =$id;
                     </div>
                     <div class="card card-style5">
                         <div class="categories-img bg-img cover-background min-height-250"
-                            data-background="img/content/job-categorie-05.jpg"></div>
+                            data-background="img/bg/worker2.jpg"></div>
                         <div class="card-body">
                             <span class="job-position">55 Jobs</span>
                             <div class="d-flex align-items-center">
@@ -530,7 +530,7 @@ $_SESSION['sendfrom'] =$id;
                     </div>
                     <div class="card card-style5">
                         <div class="categories-img bg-img cover-background min-height-250"
-                            data-background="img/content/job-categorie-06.jpg"></div>
+                            data-background="img/bg/worker2.jpg"></div>
                         <div class="card-body">
                             <span class="job-position">43 Jobs</span>
                             <div class="d-flex align-items-center">
@@ -857,8 +857,8 @@ $_SESSION['sendfrom'] =$id;
                                     <img src="img/icons/icon-23.png" alt="...">
                                 </div>
                                 <div class="process-contnet">
-                                    <h4 class="h5">02. CV / Resume Upload</h4>
-                                    <p class="mb-0">Upload By Category</p>
+                                    <h4 class="h5">02. Display Job</h4>
+                                    <p class="mb-0">Searches Job</p>
                                 </div>
                             </div>
                         </div>
@@ -870,7 +870,7 @@ $_SESSION['sendfrom'] =$id;
                                     <img src="img/icons/icon-24.png" alt="...">
                                 </div>
                                 <div class="process-contnet">
-                                    <h4 class="h5">03. Find Vacancy</h4>
+                                    <h4 class="h5">03. Find Your Job</h4>
                                     <p class="mb-0">Choose A Suitable Job</p>
                                 </div>
                             </div>
@@ -883,8 +883,8 @@ $_SESSION['sendfrom'] =$id;
                                     <img src="img/icons/icon-25.png" alt="...">
                                 </div>
                                 <div class="process-contnet">
-                                    <h4 class="h5">04. Apply Them</h4>
-                                    <p class="mb-0">Get Personal Job Offer</p>
+                                    <h4 class="h5">04. Apply job</h4>
+                                    <p class="mb-0">Get Job Offer</p>
                                 </div>
                             </div>
                         </div>

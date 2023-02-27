@@ -448,7 +448,13 @@ $_SESSION['sendfrom'] =$id;
                     <h2>Purchase Product & Equipment</h2>
                 </div>
                 <div class="row mt-n1-9">
-                    <div class="col-md-6 mt-1-9 prod_main">
+                    <?php
+                    $query = "SELECT * FROM `product`";
+                    $query_run = mysqli_query($con,$query);
+                    
+                    while($row = mysqli_fetch_assoc($query_run)){
+                        ?>
+                        <div class="col-md-6 mt-1-9 prod_main">
                         <div
                             class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
                             <div class="row align-items-center">
@@ -456,21 +462,22 @@ $_SESSION['sendfrom'] =$id;
                                     <div class="d-xl-flex align-items-center">
                                         <div class="">
                                             <div class="text-center text-xl-start mb-4 mb-xl-0 prod_1">
-                                                <img class="prod1_img" src="img/bg/feuipment_01.jpg" alt="..." />
+                                                <img class="prod1_img" src="<?php echo $row['img'] ?>" alt="..." />
                                             </div>
                                         </div>
 
                                         <div
                                             class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
                                             <h4 class="h5 mb-3">
-                                                <a href="employer-details.html">fertilizer</a>
+                                                <a href="employer-details.html"><?php echo $row['name']; ?></a>
                                             </h4>
                                             <ul class="list-style2 mb-0">
-                                                <!-- <li>
-                                                    <i class="ti-briefcase pe-2 text-secondary"></i>
-                                                </li> -->
+                                                <li><?php
+                                                echo $row['description']
+                                               ?>
+                                                </li>
                                                 <li>
-                                                    <i class="ti-location-pin pe-2 text-secondary"></i>junagadh
+                                                    <i class="ti-location-pin pe-2 text-secondary"></i><?php echo $row['location']; ?>
                                                 </li>
                                             </ul>
                                             <div class="col-xl-3 text-xl-end" style="margin-top:10px;">
@@ -484,186 +491,12 @@ $_SESSION['sendfrom'] =$id;
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-1-9 prod_main">
-                        <div
-                            class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
-                            <div class="row align-items-center">
-                                <div class="col-xl-9 mb-4 mb-xl-0">
-                                    <div class="d-xl-flex align-items-center">
-                                        <div class="">
-                                            <div class="text-center text-xl-start mb-4 mb-xl-0 prod_1">
-                                                <img class="prod1_img" src="img/bg/feuipment_01.jpg" alt="..." />
-                                            </div>
-                                        </div>
+                        <?php
+                    }
+                    ?>
+                    
 
-                                        <div
-                                            class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
-                                            <h4 class="h5 mb-3">
-                                                <a href="employer-details.html">fertilizer</a>
-                                            </h4>
-                                            <ul class="list-style2 mb-0">
-                                                <!-- <li>
-                                                    <i class="ti-briefcase pe-2 text-secondary"></i>
-                                                </li> -->
-                                                <li>
-                                                    <i class="ti-location-pin pe-2 text-secondary"></i>junagadh
-                                                </li>
-                                            </ul>
-                                            <div class="col-xl-3 text-xl-end" style="margin-top:10px;">
-                                    <a href="employer-details.html" class="butn butn-md radius">Explore</a>
-                                </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-1-9 prod_main">
-                        <div
-                            class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
-                            <div class="row align-items-center">
-                                <div class="col-xl-9 mb-4 mb-xl-0">
-                                    <div class="d-xl-flex align-items-center">
-                                        <div class="">
-                                            <div class="text-center text-xl-start mb-4 mb-xl-0 prod_1">
-                                                <img class="prod1_img" src="img/bg/feuipment_01.jpg" alt="..." />
-                                            </div>
-                                        </div>
-
-                                        <div
-                                            class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
-                                            <h4 class="h5 mb-3">
-                                                <a href="employer-details.html">fertilizer</a>
-                                            </h4>
-                                            <ul class="list-style2 mb-0">
-                                                <!-- <li>
-                                                    <i class="ti-briefcase pe-2 text-secondary"></i>
-                                                </li> -->
-                                                <li>
-                                                    <i class="ti-location-pin pe-2 text-secondary"></i>junagadh
-                                                </li>
-                                            </ul>
-                                            <div class="col-xl-3 text-xl-end" style="margin-top:10px;">
-                                    <a href="employer-details.html" class="butn butn-md radius">Explore</a>
-                                </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-1-9 prod_main">
-                        <div
-                            class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
-                            <div class="row align-items-center">
-                                <div class="col-xl-9 mb-4 mb-xl-0">
-                                    <div class="d-xl-flex align-items-center">
-                                        <div class="">
-                                            <div class="text-center text-xl-start mb-4 mb-xl-0 prod_1">
-                                                <img class="prod1_img" src="img/bg/feuipment_01.jpg" alt="..." />
-                                            </div>
-                                        </div>
-
-                                        <div
-                                            class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
-                                            <h4 class="h5 mb-3">
-                                                <a href="employer-details.html">fertilizer</a>
-                                            </h4>
-                                            <ul class="list-style2 mb-0">
-                                                <!-- <li>
-                                                    <i class="ti-briefcase pe-2 text-secondary"></i>
-                                                </li> -->
-                                                <li>
-                                                    <i class="ti-location-pin pe-2 text-secondary"></i>junagadh
-                                                </li>
-                                            </ul>
-                                            <div class="col-xl-3 text-xl-end" style="margin-top:10px;">
-                                    <a href="employer-details.html" class="butn butn-md radius">Explore</a>
-                                </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-1-9 prod_main">
-                        <div
-                            class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
-                            <div class="row align-items-center">
-                                <div class="col-xl-9 mb-4 mb-xl-0">
-                                    <div class="d-xl-flex align-items-center">
-                                        <div class="">
-                                            <div class="text-center text-xl-start mb-4 mb-xl-0 prod_1">
-                                                <img class="prod1_img" src="img/bg/feuipment_01.jpg" alt="..." />
-                                            </div>
-                                        </div>
-
-                                        <div
-                                            class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
-                                            <h4 class="h5 mb-3">
-                                                <a href="employer-details.html">fertilizer</a>
-                                            </h4>
-                                            <ul class="list-style2 mb-0">
-                                                <!-- <li>
-                                                    <i class="ti-briefcase pe-2 text-secondary"></i>
-                                                </li> -->
-                                                <li>
-                                                    <i class="ti-location-pin pe-2 text-secondary"></i>junagadh
-                                                </li>
-                                            </ul>
-                                            <div class="col-xl-3 text-xl-end" style="margin-top:10px;">
-                                    <a href="employer-details.html" class="butn butn-md radius">Explore</a>
-                                </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-1-9 prod_main">
-                        <div
-                            class="border border-color-extra-light-gray border-radius-10 bg-white px-4 py-1-9 position-relative overflow-hidden text-center text-xl-start h-100">
-                            <div class="row align-items-center">
-                                <div class="col-xl-9 mb-4 mb-xl-0">
-                                    <div class="d-xl-flex align-items-center">
-                                        <div class="">
-                                            <div class="text-center text-xl-start mb-4 mb-xl-0 prod_1">
-                                                <img class="prod1_img" src="img/bg/feuipment_01.jpg" alt="..." />
-                                            </div>
-                                        </div>
-
-                                        <div
-                                            class="flex-grow-1 border-xl-start border-color-extra-light-gray ms-xl-4 ps-xl-4">
-                                            <h4 class="h5 mb-3">
-                                                <a href="employer-details.html">fertilizer</a>
-                                            </h4>
-                                            <ul class="list-style2 mb-0">
-                                                <!-- <li>
-                                                    <i class="ti-briefcase pe-2 text-secondary"></i>
-                                                </li> -->
-                                                <li>
-                                                    <i class="ti-location-pin pe-2 text-secondary"></i>junagadh
-                                                </li>
-                                            </ul>
-                                            <div class="col-xl-3 text-xl-end" style="margin-top:10px;">
-                                    <a href="employer-details.html" class="butn butn-md radius">Explore</a>
-                                </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>

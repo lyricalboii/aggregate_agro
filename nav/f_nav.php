@@ -36,17 +36,17 @@
 
                                     <!-- menu area -->
                                     <ul class="navbar-nav ms-auto" id="nav" style="display: none;">
-                                        <li><a href="index-02.php">Home</a>
+                                        <li><a href="index-04.php">Home</a>
                                         </li>
                                     
                                         </li>
-                                        <li><a href="worker_job.php">Job</a>
+                                        <li><a href="winfoinfarmer.php">Notifications</a>
                                      
                                         </li>
                
                                         <li><a href="about_us.php">About Us</a>
                                         </li>
-                                        <li><a href="#!">Contact Us</a>
+                                        <li><a href="contact-us.php">Contact Us</a>
                                         </li>
 
                                         <li>
